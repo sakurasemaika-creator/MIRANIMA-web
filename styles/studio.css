@@ -1,0 +1,31 @@
+/* Studio identity, contact destinations and disclosure information */
+.status.development i{background:var(--accent)}
+.about-signature img{background:#0d0d0d;border-radius:4px;padding:2px}
+.footer-brand img{background:#0d0d0d;border-radius:3px;padding:1px}
+.studio-info{background:#f4f5f0;padding:108px 0 96px}
+.studio-info-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:70px;align-items:start}
+.studio-profile{background:#17221b;color:#f5f7f1;padding:36px 34px;min-height:100%}
+.studio-profile-kicker,.studio-email-label{font-size:8px;letter-spacing:.18em;font-weight:800;color:#9cad92}
+.studio-profile h3{font-family:var(--display);font-size:25px;letter-spacing:.07em;margin:22px 0 13px}
+.studio-profile h3 span{font-family:var(--sans);font-size:11px;letter-spacing:.04em;color:#aebbaa;margin-left:8px}
+.studio-profile>p:not(.studio-profile-kicker){font-size:11px;line-height:2;color:#c0cabe;margin:0 0 26px}
+.studio-legal-link{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:13px 0;border-top:1px solid rgba(220,226,216,.2);border-bottom:1px solid rgba(220,226,216,.2);font-size:10px;color:var(--accent);line-height:1.7}
+.studio-profile>small{display:block;margin-top:11px;color:#8c9b8a;font-size:9px;line-height:1.7}
+.studio-details{min-width:0}
+.studio-facts{margin:0;border-top:1px solid #d4dcd1}
+.studio-facts>div{display:grid;grid-template-columns:145px 1fr;gap:20px;padding:15px 0;border-bottom:1px solid #d4dcd1}
+.studio-facts dt{font-size:10px;color:#899487;font-weight:700}
+.studio-facts dd{font-size:11px;line-height:1.9;color:#374238;margin:0}
+.studio-emails{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.studio-emails>div{background:#e8ede5;padding:19px 18px;min-width:0}
+.studio-emails a{display:block;margin:8px 0 3px;font-size:12px;font-weight:700;color:#26382a;overflow-wrap:anywhere}
+.studio-emails small{font-size:9px;color:#778474}
+.studio-email-label{display:block;color:#82907e;font-size:7px}
+.studio-info-note{margin:24px 0 0;color:#879184;font-size:9px;line-height:1.9}
+.contact-support{font-size:10px!important;color:#8e9d8d!important;margin-top:18px!important}
+.contact-support a{color:#e3ff36;text-decoration:underline;text-underline-offset:3px}
+.footer-links{display:flex;gap:18px;margin-left:auto;margin-right:26px}
+.footer-links a{font-size:8px;letter-spacing:.1em;color:#a8b5a5}
+.footer-links a:hover{color:var(--accent)}
+@media(max-width:900px){.studio-info-grid{gap:32px}.studio-facts>div{grid-template-columns:125px 1fr}.footer-links{margin-right:0}}
+@media(max-width:680px){.studio-info{padding:76px 0 82px}.studio-info-grid{grid-template-columns:1fr;gap:23px}.studio-profile{padding:27px 24px}.studio-emails{grid-template-columns:1fr}.studio-facts>div{grid-template-columns:105px 1fr;gap:12px}.footer-links{order:4;width:100%;margin:0;flex-wrap:wrap;gap:14px}.footer-top .back-top{margin-left:auto}}
