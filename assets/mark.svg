@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="70 90 360 330" role="img" aria-labelledby="mark-title mark-desc">
+  <title id="mark-title">MIRANIMA symbol</title>
+  <desc id="mark-desc">A rounded geometric M monogram with an inverted triangular mirror mark above it.</desc>
+  <g fill="none" stroke="#e3ff36" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M99 383 V126 L164 229 V383 H99"/>
+    <path d="M401 383 V126 L338 229 V383 H401"/>
+    <path d="M164 229 L250 340 L338 229"/>
+    <path d="M174 120 H330 L252 252 Z"/>
+  </g>
+</svg>
