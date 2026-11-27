@@ -1,0 +1,111 @@
+{
+  "lang": "ko",
+  "path": "ko/",
+  "name": "한국어",
+  "ogLocale": "ko_KR",
+  "niarimLang": "ko",
+  "captureSuffix": "-ko",
+  "fonts": "family=DM+Sans:opsz,wght@9..40,400..700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;600",
+  "t": {
+    "meta": {
+      "title": "MIRANIMA — 도구에 맞춰 표현을 바꾸지 않아도 됩니다.",
+      "description": "MIRANIMA(미라니마)는 만드는 사람의 표현에서 출발해 도구를 생각하는 일본의 소프트웨어 브랜드입니다. Android용 손그림 애니메이션 제작 앱 NIARIM을 개발·제공하고 있습니다.",
+      "ogDescription": "만드는 사람의 표현에서 출발하는 도구. 손그림 애니메이션 제작 앱 NIARIM을 만드는 소프트웨어 브랜드."
+    },
+    "a11y": {
+      "skip": "본문으로 건너뛰기",
+      "home": "MIRANIMA 페이지 맨 위로",
+      "mainNav": "메인 내비게이션",
+      "mobileNav": "모바일 내비게이션",
+      "language": "언어",
+      "newTab": "(새 탭에서 열림)"
+    },
+    "nav": {
+      "name": "이름에 대하여",
+      "niarim": "프로덕트",
+      "studio": "사업 정보",
+      "contact": "문의"
+    },
+    "hero": {
+      "title": "<span class=\"ph\">도구에 맞춰</span><br><span class=\"ph\">표현을 바꾸지</span> <span class=\"ph\">않아도 됩니다.</span>",
+      "lead": "그리고 싶은 것도, 만드는 방식도 사람마다 다릅니다. MIRANIMA는 만드는 사람이 도구의 사정에 맞추는 것이 아니라, 표현하고 싶은 것에서 출발해 도구를 생각합니다.",
+      "detail": "창작 현장에서 발견한 ‘이렇게 할 수 있다면’을 실제로 쓸 수 있는 소프트웨어로 만듭니다. 첫 번째 프로덕트로 손그림 애니메이션 제작 앱 <b class=\"latin\">NIARIM</b>을 개발·제공하고 있습니다.",
+      "ctaNiarim": "NIARIM 보기",
+      "ctaName": "MIRANIMA라는 이름"
+    },
+    "mirror": {
+      "aria": "MIRANIMA 심벌을 가운데 선을 축으로 좌우 대칭으로 그린 캔버스. 그린 선은 반대쪽에 거울처럼 비칩니다.",
+      "fallback": "MIRANIMA 심벌마크.",
+      "hintFine": "드래그해서 그려 보세요. 그린 선이 거울처럼 반대쪽에 비칩니다.",
+      "hintTouch": "‘손가락으로 그리기’를 탭한 뒤 따라 그려 보세요. 그린 선이 거울처럼 반대쪽에 비칩니다.",
+      "draw": "손가락으로 그리기",
+      "done": "그리기 끝내기",
+      "clear": "지우기"
+    },
+    "name": {
+      "title": "<span class=\"ph\">이름에 담은</span> <span class=\"ph\">두 가지 의미.</span>",
+      "figcaption": "MIRANIMA라는 이름은 ‘MIRROR+ANIMA’와 ‘MIRAI+ANIMATION’, 두 가지 조합으로 읽을 수 있습니다.",
+      "m1Title": "만드는 사람의 내면을 비추는 거울.",
+      "m1Text": "Anima는 영혼이나 생명을 뜻하는 말입니다. 크리에이터의 감성과 머릿속 이미지를 생각한 그대로 비추어 내는, 거울 같은 도구를 만들고 싶습니다. 사용하는 사람의 표현을 정해 버리지 않고, 그 사람의 생각을 받아들이는 존재를 지향합니다.",
+      "m2Title": "앞으로의 표현을 함께 만듭니다.",
+      "m2Text": "Mirai는 일본어로 ‘미래’라는 뜻입니다. Animation에는 움직임을 주는 것, 생명을 불어넣는 것이라는 의미가 있습니다. 새로운 제작 방식과 표현에 도전하는 사람을 도구를 통해 돕고 싶습니다. 그 바람도 이 이름에 담았습니다."
+    },
+    "product": {
+      "tagline": "한 장씩 그려서, 움직임으로.",
+      "lead": "NIARIM은 스마트폰이나 태블릿에서 손그림 애니메이션을 만드는 Android 앱입니다.",
+      "body": "캔버스에 그림을 그리고, 다음 프레임을 겹치고, 재생하면서 움직임을 다듬습니다. 그리기부터 편집, 오디오, 동영상 내보내기까지 작품 제작의 흐름을 하나의 앱에서 진행할 수 있습니다.",
+      "site": "NIARIM 공식 사이트",
+      "play": "Google Play에서 보기"
+    },
+    "flip": {
+      "title": "공이 튀는 애니메이션",
+      "caption": "튀는 공을 한 프레임씩 늘어놓았습니다. 어니언 스킨을 켜면 앞뒤 프레임이 옅게 겹쳐 보입니다.",
+      "play": "재생",
+      "pause": "일시정지",
+      "onion": "어니언 스킨",
+      "frames": "프레임",
+      "frame": "{n}번째 프레임 보기"
+    },
+    "reel": {
+      "aria": "NIARIM으로 작품을 만드는 흐름 (실제 앱 화면)",
+      "s1Title": "한 장씩 그린다.",
+      "s1Text": "브러시와 레이어로 그림을 그려 나갑니다.",
+      "s1Alt": "NIARIM 캔버스에서 공을 그리고 있는 실제 앱 화면",
+      "s2Title": "움직임을 비교한다.",
+      "s2Text": "앞뒤 프레임을 겹쳐서 그림이 자연스럽게 이어지는지 확인합니다.",
+      "s2Alt": "앞뒤 프레임을 겹쳐 확인하는 NIARIM의 어니언 스킨 화면",
+      "s3Title": "타임라인에서 완성한다.",
+      "s3Text": "프레임과 영상, 오디오를 배치해 작품 전체를 구성합니다.",
+      "s3Alt": "프레임과 클립을 배치해 편집하는 NIARIM의 타임라인 화면",
+      "note": "실제 앱에서 촬영한 화면이며 업데이트에 따라 달라질 수 있습니다."
+    },
+    "studio": {
+      "reading": "미라니마",
+      "copy": "MIRANIMA는 크리에이터를 위한 소프트웨어를 기획·개발하는 상호입니다. 현재는 손그림 애니메이션 제작 앱 ‘NIARIM’을 중심으로 개발·운영하고 있습니다.",
+      "tradeName": "상호",
+      "tradeNameValue": "MIRANIMA (ミラニマ)",
+      "form": "사업 형태",
+      "formValue": "개인사업",
+      "disclosure": "대표자·소재지·전화번호",
+      "disclosureValue": "요청이 있으면 지체 없이 공개합니다.",
+      "legal": "특정상거래법에 따른 표기",
+      "legalLink": "NIARIM Premium의 특정상거래법에 따른 표기",
+      "legalNote": "링크된 페이지는 NIARIM Premium의 판매 조건에 관한 표기입니다."
+    },
+    "contact": {
+      "title": "문의",
+      "text": "프로덕트에 관한 질문, 거래나 협업 상담 등은 이메일로 연락해 주세요. 내용을 확인한 후 답변드리겠습니다.",
+      "general": "상담·거래 등",
+      "support": "앱 오류·사용 방법 등"
+    },
+    "footer": {
+      "tradeName": "상호: MIRANIMA"
+    },
+    "notFound": {
+      "pageTitle": "페이지를 찾을 수 없습니다",
+      "title": "<span class=\"ph\">찾으시는 페이지를</span> <span class=\"ph\">찾을 수 없습니다.</span>",
+      "text": "URL이 바뀌었거나 페이지가 삭제되었을 수 있습니다.",
+      "back": "첫 페이지로 돌아가기"
+    }
+  }
+}

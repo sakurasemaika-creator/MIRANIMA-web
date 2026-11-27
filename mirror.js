@@ -15,6 +15,7 @@
 
   const LIME = '#e3ff36';
   const BOIL_MS = 125;          // 8 drawings per second, like animating on threes
+  const LIVE_MS = 6000;         // lines settle this long after the last activity (WCAG 2.2.2: no endless motion)
   const BOIL_AMPLITUDE = 0.0022; // relative to the panel's short side
   const MAX_POINTS = 9000;
 
@@ -29,6 +30,7 @@
   let boilFrame = 0;
   let onScreen = true;
   let rafId = 0;
+  let liveUntil = 0;
 
   /* ---------- The MIRANIMA mark, left half (assets/mark.svg) ---------- */
   const MARK_PATHS = [
@@ -109,7 +111,7 @@
     ctx.fillStyle = LIME;
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
-    const boil = !reducedMotion.matches;
+    const boil = !reducedMotion.matches && (Boolean(intro) || Boolean(activeStroke) || now < liveUntil);
 
     let budget = Infinity;
     if (intro) {
@@ -128,12 +130,12 @@
   };
 
   /* ---------- Loop: only runs while something is moving ---------- */
-  const needsLoop = () => onScreen && document.visibilityState === 'visible'
-    && (intro || (!reducedMotion.matches && strokes.length > 0));
+  const needsLoop = (now = performance.now()) => onScreen && document.visibilityState === 'visible'
+    && (intro || activeStroke || (!reducedMotion.matches && strokes.length > 0 && now < liveUntil));
 
   const tick = (now) => {
     rafId = 0;
-    if (!needsLoop()) { render(now); return; }
+    if (!needsLoop(now)) { render(now); return; }
     const frame = Math.floor(now / BOIL_MS) % 3;
     if (intro || frame !== boilFrame || activeStroke) {
       boilFrame = frame;
@@ -142,6 +144,8 @@
     rafId = requestAnimationFrame(tick);
   };
   const wake = () => { if (!rafId) rafId = requestAnimationFrame(tick); };
+  /* Activity keeps the lines alive; hovering the panel wakes them again. */
+  const liven = () => { liveUntil = performance.now() + LIVE_MS; wake(); };
 
   /* ---------- Size ---------- */
   const resize = () => {
@@ -191,9 +195,14 @@
   };
 
   const setHint = (text) => { if (hint) hint.textContent = text; };
-  const idleHint = () => (coarsePointer.matches
-    ? '「指で描く」をタップして、なぞってみてください。描いた線が、鏡のように反対側へ映ります。'
-    : 'ドラッグして描いてみてください。描いた線が、鏡のように反対側へ映ります。');
+  /* Interface text comes from the page, so every language version shares this script. */
+  const text = {
+    hintFine: panel.dataset.hintFine || '',
+    hintTouch: panel.dataset.hintTouch || '',
+    draw: panel.dataset.labelDraw || 'Draw',
+    done: panel.dataset.labelDone || 'Done',
+  };
+  const idleHint = () => (coarsePointer.matches ? text.hintTouch : text.hintFine);
 
   const canDraw = (event) => {
     if (event.pointerType === 'mouse' && event.button !== 0) return false;
@@ -212,13 +221,15 @@
     addPoint(event);
     if (clearBtn) clearBtn.hidden = false;
     render();
-    wake();
+    liven();
   });
+  canvas.addEventListener('pointerenter', liven);
 
   canvas.addEventListener('pointermove', (event) => {
     if (!activeStroke) return;
     const events = event.getCoalescedEvents ? event.getCoalescedEvents() : [event];
     (events.length ? events : [event]).forEach(addPoint);
+    liveUntil = performance.now() + LIVE_MS;
     render();
   });
 
@@ -227,6 +238,7 @@
     activeStroke = null;
     lastPoint = null;
     trimHistory();
+    liven();
     render();
   };
   canvas.addEventListener('pointerup', endStroke);
@@ -248,7 +260,7 @@
     panel.dataset.touch = mode;
     const drawing = mode === 'draw';
     drawBtn.setAttribute('aria-pressed', String(drawing));
-    drawBtn.textContent = drawing ? '描き終える' : '指で描く';
+    drawBtn.textContent = drawing ? text.done : text.draw;
   };
   const applyPointerMode = () => {
     if (!drawBtn) return;
@@ -288,6 +300,7 @@
   panel.classList.add('is-ready');
   if (!reducedMotion.matches) {
     intro = { start: performance.now() + 350, duration: 1900, total: mark.reduce((n, s) => n + s.points.length, 0) };
+    liveUntil = intro.start + intro.duration + LIVE_MS;
   }
   wake();
 })();

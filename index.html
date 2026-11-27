@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Generated from src/template.html + src/locales/ja.json by tools/build.mjs. Edit those, then run: node tools/build.mjs -->
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -8,6 +9,14 @@
   <meta name="theme-color" content="#f5f3ed">
   <meta name="color-scheme" content="light">
   <link rel="canonical" href="https://miranima-studio.com/">
+  <link rel="alternate" hreflang="ja" href="https://miranima-studio.com/">
+  <link rel="alternate" hreflang="en" href="https://miranima-studio.com/en/">
+  <link rel="alternate" hreflang="es" href="https://miranima-studio.com/es/">
+  <link rel="alternate" hreflang="fr" href="https://miranima-studio.com/fr/">
+  <link rel="alternate" hreflang="ko" href="https://miranima-studio.com/ko/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://miranima-studio.com/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://miranima-studio.com/zh-hant/">
+  <link rel="alternate" hreflang="x-default" href="https://miranima-studio.com/">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="MIRANIMA">
@@ -15,7 +24,7 @@
   <meta property="og:title" content="MIRANIMA — 道具に合わせて、表現を変えなくていい。">
   <meta property="og:description" content="つくる人の表現から、道具を考える。手描きアニメーション制作アプリ NIARIM を開発するソフトウェアブランド。">
   <meta property="og:url" content="https://miranima-studio.com/">
-  <meta property="og:image" content="https://miranima-studio.com/assets/og-image.png">
+  <meta property="og:image" content="https://miranima-studio.com/assets/og/ja.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="MIRANIMA — 道具に合わせて、表現を変えなくていい。">
@@ -27,15 +36,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://niarim.miranima-studio.com">
-  <!-- Web fonts load without blocking first paint; system Japanese fonts show until they arrive. -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap"></noscript>
+  <!-- Web fonts load without blocking first paint; system fonts show until they arrive. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Shippori+Mincho:wght@500;600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Shippori+Mincho:wght@500;600&amp;display=swap"></noscript>
   <link rel="stylesheet" href="styles/core.css">
   <link rel="stylesheet" href="styles/home.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="site.config.js" defer></script>
   <script src="script.js" defer></script>
   <script src="mirror.js" defer></script>
+  <script src="flipbook.js" defer></script>
 
   <script type="application/ld+json">
   {
@@ -46,7 +56,11 @@
     "url": "https://miranima-studio.com/",
     "logo": "https://miranima-studio.com/assets/apple-touch-icon.png",
     "email": "contact@miranima-studio.com",
-    "brand": { "@type": "Brand", "name": "NIARIM", "url": "https://niarim.miranima-studio.com/" }
+    "brand": {
+      "@type": "Brand",
+      "name": "NIARIM",
+      "url": "https://niarim.miranima-studio.com/"
+    }
   }
   </script>
 </head>
@@ -62,7 +76,8 @@
   </symbol>
   <symbol id="arrow-ne" viewBox="0 0 16 16"><path d="M4.5 11.5l7-7M5.5 4.5h6v6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></symbol>
   <symbol id="arrow-down" viewBox="0 0 16 16"><path d="M8 2.5v11M3.5 9l4.5 4.5L12.5 9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></symbol>
-  <symbol id="arrow-right" viewBox="0 0 16 16"><path d="M2.5 8h11M9 3.5L13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></symbol>
+  <symbol id="globe" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="8" cy="8" r="6.2"/><path d="M1.8 8h12.4M8 1.8c-2.2 2.3-2.2 10.1 0 12.4M8 1.8c2.2 2.3 2.2 10.1 0 12.4"/></g></symbol>
+  <symbol id="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></symbol>
 </svg>
 
 <a class="skip-link" href="#main">本文へスキップ</a>
@@ -79,6 +94,20 @@
         <li><a href="#niarim" data-nav>NIARIM</a></li>
         <li><a href="#studio" data-nav>Studio</a></li>
       </ul>
+      <details class="lang" data-lang>
+        <summary class="lang-btn" aria-label="言語: 日本語">
+          <svg class="icon" aria-hidden="true"><use href="#globe"/></svg><span>日本語</span><svg class="icon lang-chevron" aria-hidden="true"><use href="#chevron"/></svg>
+        </summary>
+        <ul class="lang-list">
+          <li><a href="./" hreflang="ja" lang="ja" aria-current="page">日本語</a></li>
+          <li><a href="en/" hreflang="en" lang="en">English</a></li>
+          <li><a href="es/" hreflang="es" lang="es">Español</a></li>
+          <li><a href="fr/" hreflang="fr" lang="fr">Français</a></li>
+          <li><a href="ko/" hreflang="ko" lang="ko">한국어</a></li>
+          <li><a href="zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+          <li><a href="zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li>
+        </ul>
+      </details>
       <a class="nav-cta" href="#contact" data-nav>Contact</a>
     </nav>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn>
@@ -96,7 +125,21 @@
       <li><a href="#studio"><span>03</span>Studio<small>事業について</small></a></li>
       <li><a href="#contact"><span>04</span>Contact<small>お問い合わせ</small></a></li>
     </ol>
-    <p class="menu-foot"><a href="mailto:contact@miranima-studio.com" data-email="contactEmail">contact@miranima-studio.com</a></p>
+    <div class="menu-foot">
+      <div class="menu-langs">
+        <p class="label">Language</p>
+        <ul class="menu-lang-list">
+          <li><a href="./" hreflang="ja" lang="ja" aria-current="page">日本語</a></li>
+          <li><a href="en/" hreflang="en" lang="en">English</a></li>
+          <li><a href="es/" hreflang="es" lang="es">Español</a></li>
+          <li><a href="fr/" hreflang="fr" lang="fr">Français</a></li>
+          <li><a href="ko/" hreflang="ko" lang="ko">한국어</a></li>
+          <li><a href="zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+          <li><a href="zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li>
+        </ul>
+      </div>
+      <a class="menu-mail" href="mailto:contact@miranima-studio.com" data-email="contactEmail">contact@miranima-studio.com</a>
+    </div>
   </nav>
 </div>
 
@@ -117,7 +160,11 @@
       </div>
 
       <figure class="mirror-figure">
-        <div class="mirror" data-mirror>
+        <div class="mirror" data-mirror
+          data-hint-fine="ドラッグして描いてみてください。描いた線が、鏡のように反対側へ映ります。"
+          data-hint-touch="「指で描く」をタップして、なぞってみてください。描いた線が、鏡のように反対側へ映ります。"
+          data-label-draw="指で描く"
+          data-label-done="描き終える">
           <div class="mirror-frame" aria-hidden="true"></div>
           <div class="mirror-surface">
             <img class="mirror-fallback" src="assets/mark.svg" alt="" width="180" height="165">
@@ -153,7 +200,7 @@
       </header>
 
       <figure class="name-figure">
-        <div class="name-diagram" aria-hidden="true">
+        <div class="name-diagram" aria-hidden="true" data-name-diagram>
           <div class="nd-side nd-l">
             <p class="nd-cap nd-top"><b>MIR</b>ROR</p>
             <p class="nd-word">MIR</p>
@@ -201,9 +248,44 @@
           <p class="product-lead">NIARIMは、スマートフォンやタブレットで手描きアニメーションを制作するAndroidアプリです。</p>
           <p>キャンバスに絵を描き、次のフレームを重ね、再生しながら動きを整える。描画から編集、音声、動画の書き出しまで、作品づくりの流れをひとつのアプリで進められます。</p>
           <div class="product-actions">
-            <a class="btn btn-niarim" href="https://niarim.miranima-studio.com/" data-link="niarimUrl" target="_blank" rel="noopener">NIARIM公式サイト<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg><span class="visually-hidden">（新しいタブで開きます）</span></a>
-            <a class="text-link text-link-ext" href="https://play.google.com/store/apps/details?id=com.niarim.niarim" target="_blank" rel="noopener">Google Playで見る<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg><span class="visually-hidden">（新しいタブで開きます）</span></a>
+            <a class="btn btn-niarim" href="https://niarim.miranima-studio.com/?lang=ja" target="_blank" rel="noopener">NIARIM公式サイト<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg><span class="visually-hidden">（新しいタブで開きます）</span></a>
+            <a class="text-link text-link-ext" href="https://play.google.com/store/apps/details?id=com.niarim.niarim&amp;hl=ja" target="_blank" rel="noopener">Google Playで見る<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg><span class="visually-hidden">（新しいタブで開きます）</span></a>
           </div>
+        </div>
+      </div>
+
+      <!-- Playback: the "ball bounce" sample, one frame at a time -->
+      <div class="flipbook is-onion" data-flipbook
+        data-label-play="再生"
+        data-label-pause="一時停止">
+        <div class="fb-stage">
+          <p class="label fb-label">Playback<span>8 fps</span></p>
+          <svg class="fb-view" viewBox="0 0 120 90" role="img" aria-labelledby="fb-title">
+            <title id="fb-title">ボールが弾むアニメーション</title>
+            <defs><clipPath id="fb-ball-clip"><circle r="10"/></clipPath><g id="fb-ball"><circle r="10" fill="#f06858"/><g clip-path="url(#fb-ball-clip)"><rect x="-3.4" y="-14" width="6.8" height="28" fill="#f8e0a0"/><path d="M-3.4 -14v28M3.4 -14v28" stroke="#282838" stroke-width="1.1" vector-effect="non-scaling-stroke"/></g><ellipse cx="-5" cy="-4.6" rx="2.8" ry="1.3" fill="#fff" opacity=".6"/><circle r="10" fill="none" stroke="#282838" stroke-width="1.6" vector-effect="non-scaling-stroke"/></g><g id="fb-ground"><path d="M4 80H116" stroke="#282838" stroke-width="1.6" vector-effect="non-scaling-stroke"/><path d="M14 80l-1.5-3M16 80v-3.4M18 80l1.5-3M100 80l-1.5-3M102 80v-3.4M104 80l1.5-3" stroke="#282838" stroke-width="1.2" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/></g><g id="fb-f0"><ellipse class="fb-shadow" cx="18" cy="81" rx="5" ry="1.6"/><use href="#fb-ball" transform="translate(18 18) rotate(-40)"/></g><g id="fb-f1"><ellipse class="fb-shadow" cx="31" cy="81" rx="6" ry="1.6"/><use href="#fb-ball" transform="translate(31 32) rotate(-28) scale(.96 1.06)"/></g><g id="fb-f2"><ellipse class="fb-shadow" cx="43" cy="81" rx="7.5" ry="1.6"/><use href="#fb-ball" transform="translate(43 49) rotate(-16) scale(.92 1.12)"/></g><g id="fb-f3"><ellipse class="fb-shadow" cx="53" cy="81" rx="9" ry="1.6"/><use href="#fb-ball" transform="translate(53 64) rotate(-6) scale(.92 1.1)"/></g><g id="fb-f4"><ellipse class="fb-shadow" cx="62" cy="81" rx="15" ry="1.6"/><use href="#fb-ball" transform="translate(62 73.4) scale(1.45 .66) rotate(8)"/></g><g id="fb-f5"><ellipse class="fb-shadow" cx="72" cy="81" rx="9" ry="1.6"/><use href="#fb-ball" transform="translate(72 60) rotate(20) scale(.92 1.12)"/></g><g id="fb-f6"><ellipse class="fb-shadow" cx="84" cy="81" rx="7" ry="1.6"/><use href="#fb-ball" transform="translate(84 44) rotate(34) scale(.96 1.05)"/></g><g id="fb-f7"><ellipse class="fb-shadow" cx="97" cy="81" rx="6" ry="1.6"/><use href="#fb-ball" transform="translate(97 32) rotate(46)"/></g><circle id="fb-g0" r="10" transform="translate(18 18) rotate(-40)"/><circle id="fb-g1" r="10" transform="translate(31 32) rotate(-28) scale(.96 1.06)"/><circle id="fb-g2" r="10" transform="translate(43 49) rotate(-16) scale(.92 1.12)"/><circle id="fb-g3" r="10" transform="translate(53 64) rotate(-6) scale(.92 1.1)"/><circle id="fb-g4" r="10" transform="translate(62 73.4) scale(1.45 .66) rotate(8)"/><circle id="fb-g5" r="10" transform="translate(72 60) rotate(20) scale(.92 1.12)"/><circle id="fb-g6" r="10" transform="translate(84 44) rotate(34) scale(.96 1.05)"/><circle id="fb-g7" r="10" transform="translate(97 32) rotate(46)"/></defs>
+            <use href="#fb-ground"/>
+            <use class="fb-ghost fb-ghost-prev" href="#fb-g3" data-fb-prev/>
+            <use class="fb-ghost fb-ghost-next" href="#fb-g5" data-fb-next/>
+            <use href="#fb-f4" data-fb-current/>
+          </svg>
+        </div>
+        <div class="fb-side">
+          <p class="label fb-strip-label">Frames<span><span data-fb-count>05</span> / 08</span></p>
+          <ol class="fb-cells" aria-label="フレーム">
+            <li><button class="fb-cell" type="button" data-fb-cell="0" aria-pressed="false" aria-label="フレーム1を表示"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f0"/></svg><span class="fb-cell-no">01</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="1" aria-pressed="false" aria-label="フレーム2を表示"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f1"/></svg><span class="fb-cell-no">02</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="2" aria-pressed="false" aria-label="フレーム3を表示"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f2"/></svg><span class="fb-cell-no">03</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="3" aria-pressed="false" aria-label="フレーム4を表示"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f3"/></svg><span class="fb-cell-no">04</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="4" aria-pressed="true" aria-label="フレーム5を表示"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f4"/></svg><span class="fb-cell-no">05</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="5" aria-pressed="false" aria-label="フレーム6を表示"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f5"/></svg><span class="fb-cell-no">06</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="6" aria-pressed="false" aria-label="フレーム7を表示"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f6"/></svg><span class="fb-cell-no">07</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="7" aria-pressed="false" aria-label="フレーム8を表示"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f7"/></svg><span class="fb-cell-no">08</span></button></li>
+          </ol>
+          <div class="fb-controls">
+            <button class="fb-btn fb-play" type="button" data-fb-play hidden><span class="fb-play-icon" aria-hidden="true"></span><span data-fb-play-label>再生</span></button>
+            <button class="fb-btn fb-onion" type="button" data-fb-onion aria-pressed="true" hidden><span class="fb-onion-icon" aria-hidden="true"><i></i><i></i></span>オニオンスキン</button>
+          </div>
+          <p class="fb-caption">ボールが弾むアニメを1フレームずつ並べました。オニオンスキンをオンにすると、前後のフレームが薄く重なります。</p>
         </div>
       </div>
 
@@ -213,7 +295,7 @@
             <li class="frame">
               <p class="frame-no" aria-hidden="true">F.01</p>
               <figure class="frame-fig">
-                <div class="phone"><img src="https://niarim.miranima-studio.com/assets/images/app-captures/layers.webp" alt="NIARIMのレイヤー管理を表示した実際のアプリ画面" width="640" height="1138" loading="lazy" decoding="async"></div>
+                <div class="phone"><img src="https://niarim.miranima-studio.com/assets/images/app-captures/canvas.webp" alt="NIARIMのキャンバスでボールを描いている実際のアプリ画面" width="640" height="1138" loading="lazy" decoding="async"></div>
                 <figcaption>
                   <span class="label frame-step">01 — Draw</span>
                   <strong class="frame-title">一枚ずつ描く。</strong>
@@ -275,7 +357,7 @@
             <div class="fact">
               <dt>特定商取引法に基づく表記</dt>
               <dd>
-                <a class="fact-link" href="https://niarim.miranima-studio.com/tokushoho/" data-link="niarimLegalUrl" target="_blank" rel="noopener">NIARIM Premiumの特定商取引法に<span class="nowrap">基づく表記<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg></span><span class="visually-hidden">（新しいタブで開きます）</span></a>
+                <a class="fact-link" href="https://niarim.miranima-studio.com/tokushoho/?lang=ja" target="_blank" rel="noopener">NIARIM Premiumの特定商取引法に基づく表記<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg><span class="visually-hidden">（新しいタブで開きます）</span></a>
                 <small>リンク先はNIARIM Premiumの販売条件に関する表示です。</small>
               </dd>
             </div>

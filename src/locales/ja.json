@@ -1,0 +1,111 @@
+{
+  "lang": "ja",
+  "path": "",
+  "name": "日本語",
+  "ogLocale": "ja_JP",
+  "niarimLang": "ja",
+  "captureSuffix": "",
+  "fonts": "family=DM+Sans:opsz,wght@9..40,400..700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600",
+  "t": {
+    "meta": {
+      "title": "MIRANIMA — 道具に合わせて、表現を変えなくていい。",
+      "description": "MIRANIMA（ミラニマ）は、つくる人の表現から道具を考えるソフトウェアブランドです。Android向け手描きアニメーション制作アプリ NIARIM を開発・提供しています。",
+      "ogDescription": "つくる人の表現から、道具を考える。手描きアニメーション制作アプリ NIARIM を開発するソフトウェアブランド。"
+    },
+    "a11y": {
+      "skip": "本文へスキップ",
+      "home": "MIRANIMA ページの先頭へ",
+      "mainNav": "メインナビゲーション",
+      "mobileNav": "モバイルナビゲーション",
+      "language": "言語",
+      "newTab": "（新しいタブで開きます）"
+    },
+    "nav": {
+      "name": "名前について",
+      "niarim": "プロダクト",
+      "studio": "事業について",
+      "contact": "お問い合わせ"
+    },
+    "hero": {
+      "title": "<span class=\"ph\">道具に</span><span class=\"ph\">合わせて、</span><br><span class=\"ph\">表現を</span><span class=\"ph\">変えなくていい。</span>",
+      "lead": "描きたいものも、作り方も、人によって違います。MIRANIMAは、つくる人が道具の都合に合わせるのではなく、表現したいことから道具を考えます。",
+      "detail": "制作の現場で見つけた「こうできたら」を、実際に使えるソフトウェアに。最初のプロダクトとして、手描きアニメーション制作アプリ <b class=\"latin\">NIARIM</b> を開発・提供しています。",
+      "ctaNiarim": "NIARIMを見る",
+      "ctaName": "MIRANIMAという名前"
+    },
+    "mirror": {
+      "aria": "MIRANIMAのシンボルを、中央の線を軸に左右対称に描いたキャンバス。描いた線は、反対側に鏡のように映ります。",
+      "fallback": "MIRANIMAのシンボルマーク。",
+      "hintFine": "ドラッグして描いてみてください。描いた線が、鏡のように反対側へ映ります。",
+      "hintTouch": "「指で描く」をタップして、なぞってみてください。描いた線が、鏡のように反対側へ映ります。",
+      "draw": "指で描く",
+      "done": "描き終える",
+      "clear": "消す"
+    },
+    "name": {
+      "title": "<span class=\"ph\">名前に込めた、</span><span class=\"ph\">ふたつの意味。</span>",
+      "figcaption": "MIRANIMAという名前は、「MIRROR＋ANIMA」と「MIRAI＋ANIMATION」のふたつの組み合わせとして読めます。",
+      "m1Title": "つくる人の内側を映す鏡。",
+      "m1Text": "Animaは、魂や生命を意味する言葉。クリエイターの感性や頭の中にあるイメージを、意のままに映し出せる鏡のような道具をつくりたい。使う人の表現を決めつけず、その人の考えを受け止める存在を目指しています。",
+      "m2Title": "これからの表現を、ともにつくる。",
+      "m2Text": "Miraiは日本語の「未来」。Animationには、動きを与えること、命を吹き込むことという意味があります。新しい作り方や表現に挑戦する人を、道具づくりを通じて支えていきたい。その願いも、この名前に込めました。"
+    },
+    "product": {
+      "tagline": "一枚ずつ描いて、動きにする。",
+      "lead": "NIARIMは、スマートフォンやタブレットで手描きアニメーションを制作するAndroidアプリです。",
+      "body": "キャンバスに絵を描き、次のフレームを重ね、再生しながら動きを整える。描画から編集、音声、動画の書き出しまで、作品づくりの流れをひとつのアプリで進められます。",
+      "site": "NIARIM公式サイト",
+      "play": "Google Playで見る"
+    },
+    "flip": {
+      "title": "ボールが弾むアニメーション",
+      "caption": "ボールが弾むアニメを1フレームずつ並べました。オニオンスキンをオンにすると、前後のフレームが薄く重なります。",
+      "play": "再生",
+      "pause": "一時停止",
+      "onion": "オニオンスキン",
+      "frames": "フレーム",
+      "frame": "フレーム{n}を表示"
+    },
+    "reel": {
+      "aria": "NIARIMで作品をつくる流れ（実際のアプリ画面）",
+      "s1Title": "一枚ずつ描く。",
+      "s1Text": "ブラシやレイヤーを使い、絵を描き重ねていく。",
+      "s1Alt": "NIARIMのキャンバスでボールを描いている実際のアプリ画面",
+      "s2Title": "動きを見比べる。",
+      "s2Text": "前後のフレームを重ねて、絵のつながりを確かめる。",
+      "s2Alt": "前後のフレームを重ねて確認するNIARIMのオニオンスキン画面",
+      "s3Title": "タイムラインで仕上げる。",
+      "s3Text": "フレームや映像、音声を並べ、作品全体を組み立てる。",
+      "s3Alt": "フレームやクリップを並べて編集するNIARIMのタイムライン画面",
+      "note": "掲載画面はNIARIMの実際のアプリ画面です。アップデートにより表示が変わる場合があります。"
+    },
+    "studio": {
+      "reading": "ミラニマ",
+      "copy": "クリエイター向けソフトウェアを企画・開発する屋号です。現在は、手描きアニメーション制作アプリ「NIARIM」を中心に開発・運営しています。",
+      "tradeName": "屋号",
+      "tradeNameValue": "MIRANIMA（ミラニマ）",
+      "form": "事業形態",
+      "formValue": "個人事業",
+      "disclosure": "代表者・所在地・電話番号",
+      "disclosureValue": "ご請求があった場合は、遅滞なく開示いたします。",
+      "legal": "特定商取引法に基づく表記",
+      "legalLink": "NIARIM Premiumの特定商取引法に基づく表記",
+      "legalNote": "リンク先はNIARIM Premiumの販売条件に関する表示です。"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "text": "プロダクトについてのご質問、お取引や協業のご相談などは、メールでご連絡ください。内容を確認のうえ、返信いたします。",
+      "general": "ご相談・お取引など",
+      "support": "アプリの不具合・使い方など"
+    },
+    "footer": {
+      "tradeName": "屋号：MIRANIMA（ミラニマ）"
+    },
+    "notFound": {
+      "pageTitle": "ページが見つかりません",
+      "title": "<span class=\"ph\">お探しのページは</span><span class=\"ph\">見つかりませんでした。</span>",
+      "text": "URLが変更されたか、ページが削除された可能性があります。",
+      "back": "トップページへ戻る"
+    }
+  }
+}

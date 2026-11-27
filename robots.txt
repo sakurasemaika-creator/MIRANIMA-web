@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://miranima-studio.com/sitemap.xml

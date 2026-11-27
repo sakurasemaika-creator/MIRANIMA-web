@@ -1,0 +1,111 @@
+{
+  "lang": "fr",
+  "path": "fr/",
+  "name": "Français",
+  "ogLocale": "fr_FR",
+  "niarimLang": "fr",
+  "captureSuffix": "-fr",
+  "fonts": "family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400&family=Shippori+Mincho:wght@500;600",
+  "t": {
+    "meta": {
+      "title": "MIRANIMA — Votre expression n’a pas à se plier à vos outils.",
+      "description": "MIRANIMA est une marque de logiciels japonaise qui conçoit ses outils à partir de ce que les créateurs veulent exprimer. Nous développons NIARIM, une application Android d’animation dessinée à la main.",
+      "ogDescription": "Des outils pensés à partir de ce que vous voulez exprimer. La marque de logiciels derrière NIARIM, une application d’animation dessinée à la main."
+    },
+    "a11y": {
+      "skip": "Aller au contenu",
+      "home": "MIRANIMA — retour en haut",
+      "mainNav": "Navigation principale",
+      "mobileNav": "Navigation mobile",
+      "language": "Langue",
+      "newTab": "(s’ouvre dans un nouvel onglet)"
+    },
+    "nav": {
+      "name": "À propos du nom",
+      "niarim": "Produit",
+      "studio": "À propos",
+      "contact": "Nous écrire"
+    },
+    "hero": {
+      "title": "Votre expression n’a pas à se plier à vos outils.",
+      "lead": "Ce que l’on veut dessiner, et la manière de le créer, diffèrent d’une personne à l’autre. Plutôt que de demander aux créateurs de s’adapter aux contraintes de l’outil, MIRANIMA conçoit ses outils à partir de ce qu’ils veulent exprimer.",
+      "detail": "Nous transformons les « si seulement on pouvait… » rencontrés en pleine création en logiciels réellement utilisables. Notre premier produit est <b class=\"latin\">NIARIM</b>, une application d’animation dessinée à la main.",
+      "ctaNiarim": "Découvrir NIARIM",
+      "ctaName": "À propos du nom"
+    },
+    "mirror": {
+      "aria": "Une toile montrant le symbole de MIRANIMA, tracé de façon symétrique autour d’un axe central. Tout ce que l’on y dessine se reflète de l’autre côté.",
+      "fallback": "Le symbole de MIRANIMA.",
+      "hintFine": "Faites glisser pour dessiner. Chaque trait se reflète de l’autre côté.",
+      "hintTouch": "Touchez « Dessiner » et tracez du doigt. Chaque trait se reflète de l’autre côté.",
+      "draw": "Dessiner",
+      "done": "Terminé",
+      "clear": "Effacer"
+    },
+    "name": {
+      "title": "Deux sens dans un seul nom.",
+      "figcaption": "Le nom MIRANIMA se lit de deux façons : MIRROR + ANIMA et MIRAI + ANIMATION.",
+      "m1Title": "Un miroir de l’univers intérieur des créateurs.",
+      "m1Text": "Anima est un mot qui désigne l’âme, la vie. Nous voulons créer des outils qui agissent comme un miroir, capables de refléter fidèlement la sensibilité d’un créateur et les images qu’il a en tête. Des outils qui n’imposent pas une manière de s’exprimer, mais qui accueillent les idées de chacun.",
+      "m2Title": "Inventer ensemble l’expression de demain.",
+      "m2Text": "Mirai signifie « avenir » en japonais. Animation veut dire donner du mouvement, insuffler la vie. À travers nos outils, nous voulons accompagner celles et ceux qui explorent de nouvelles façons de créer et de s’exprimer. Ce souhait est lui aussi inscrit dans le nom."
+    },
+    "product": {
+      "tagline": "Dessinez image par image. Donnez-lui vie.",
+      "lead": "NIARIM est une application Android pour créer de l’animation dessinée à la main sur téléphone ou tablette.",
+      "body": "Dessinez sur la toile, superposez l’image suivante et ajustez le mouvement en le lisant. Du dessin au montage, du son à l’export vidéo, tout se fait dans une seule application.",
+      "site": "Site officiel de NIARIM",
+      "play": "Voir sur Google Play"
+    },
+    "flip": {
+      "title": "Animation d’une balle qui rebondit",
+      "caption": "Une balle qui rebondit, image par image. Activez la pelure d’oignon pour voir l’image précédente et la suivante.",
+      "play": "Lecture",
+      "pause": "Pause",
+      "onion": "Pelure d’oignon",
+      "frames": "Images",
+      "frame": "Afficher l’image {n}"
+    },
+    "reel": {
+      "aria": "Comment une œuvre prend forme dans NIARIM (écrans réels de l’application)",
+      "s1Title": "Dessinez image par image.",
+      "s1Text": "Construisez chaque dessin avec les pinceaux et les calques.",
+      "s1Alt": "La toile de NIARIM avec une balle en cours de dessin, capture de l’application réelle",
+      "s2Title": "Comparez le mouvement.",
+      "s2Text": "Superposez l’image précédente et la suivante pour vérifier l’enchaînement des dessins.",
+      "s2Alt": "La pelure d’oignon de NIARIM, qui superpose l’image précédente et la suivante",
+      "s3Title": "Finalisez sur la chronologie.",
+      "s3Text": "Assemblez images, vidéo et son pour monter l’œuvre complète.",
+      "s3Alt": "La chronologie de NIARIM, avec images et clips disposés pour le montage",
+      "note": "Captures de l’application réelle ; les écrans peuvent changer après une mise à jour."
+    },
+    "studio": {
+      "reading": "mi·ra·ni·ma",
+      "copy": "MIRANIMA est le nom commercial sous lequel nous concevons et développons des logiciels pour les créateurs. Nous développons et exploitons actuellement NIARIM, une application d’animation dessinée à la main.",
+      "tradeName": "Nom commercial",
+      "tradeNameValue": "MIRANIMA (ミラニマ)",
+      "form": "Forme d’activité",
+      "formValue": "Entreprise individuelle",
+      "disclosure": "Responsable, adresse et téléphone",
+      "disclosureValue": "Communiqués sans délai sur simple demande.",
+      "legal": "Loi sur les transactions commerciales spécifiées",
+      "legalLink": "NIARIM Premium : mentions selon la loi sur les transactions commerciales spécifiées",
+      "legalNote": "La page liée présente les conditions de vente de NIARIM Premium."
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "Pour toute question sur nos produits, ou pour parler d’un partenariat ou d’une collaboration, écrivez-nous par e-mail. Nous lirons votre message et vous répondrons.",
+      "general": "Questions et partenariats",
+      "support": "Problèmes et utilisation de l’app"
+    },
+    "footer": {
+      "tradeName": "Nom commercial : MIRANIMA"
+    },
+    "notFound": {
+      "pageTitle": "Page introuvable",
+      "title": "Cette page est introuvable.",
+      "text": "L’adresse a peut-être changé, ou la page a été supprimée.",
+      "back": "Retour à l’accueil"
+    }
+  }
+}

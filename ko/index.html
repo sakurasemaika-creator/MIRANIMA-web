@@ -1,0 +1,411 @@
+<!doctype html>
+<!-- Generated from src/template.html + src/locales/ko.json by tools/build.mjs. Edit those, then run: node tools/build.mjs -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MIRANIMA — 도구에 맞춰 표현을 바꾸지 않아도 됩니다.</title>
+  <meta name="description" content="MIRANIMA(미라니마)는 만드는 사람의 표현에서 출발해 도구를 생각하는 일본의 소프트웨어 브랜드입니다. Android용 손그림 애니메이션 제작 앱 NIARIM을 개발·제공하고 있습니다.">
+  <meta name="theme-color" content="#f5f3ed">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://miranima-studio.com/ko/">
+  <link rel="alternate" hreflang="ja" href="https://miranima-studio.com/">
+  <link rel="alternate" hreflang="en" href="https://miranima-studio.com/en/">
+  <link rel="alternate" hreflang="es" href="https://miranima-studio.com/es/">
+  <link rel="alternate" hreflang="fr" href="https://miranima-studio.com/fr/">
+  <link rel="alternate" hreflang="ko" href="https://miranima-studio.com/ko/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://miranima-studio.com/zh-hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://miranima-studio.com/zh-hant/">
+  <link rel="alternate" hreflang="x-default" href="https://miranima-studio.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MIRANIMA">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:title" content="MIRANIMA — 도구에 맞춰 표현을 바꾸지 않아도 됩니다.">
+  <meta property="og:description" content="만드는 사람의 표현에서 출발하는 도구. 손그림 애니메이션 제작 앱 NIARIM을 만드는 소프트웨어 브랜드.">
+  <meta property="og:url" content="https://miranima-studio.com/ko/">
+  <meta property="og:image" content="https://miranima-studio.com/assets/og/ko.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MIRANIMA — 도구에 맞춰 표현을 바꾸지 않아도 됩니다.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://niarim.miranima-studio.com">
+  <!-- Web fonts load without blocking first paint; system fonts show until they arrive. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&amp;family=Noto+Sans+KR:wght@400;500;700&amp;family=Noto+Serif+KR:wght@500;600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&amp;family=Noto+Sans+KR:wght@400;500;700&amp;family=Noto+Serif+KR:wght@500;600&amp;display=swap"></noscript>
+  <link rel="stylesheet" href="../styles/core.css">
+  <link rel="stylesheet" href="../styles/home.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="../site.config.js" defer></script>
+  <script src="../script.js" defer></script>
+  <script src="../mirror.js" defer></script>
+  <script src="../flipbook.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MIRANIMA",
+    "alternateName": "ミラニマ",
+    "url": "https://miranima-studio.com/",
+    "logo": "https://miranima-studio.com/assets/apple-touch-icon.png",
+    "email": "contact@miranima-studio.com",
+    "brand": {
+      "@type": "Brand",
+      "name": "NIARIM",
+      "url": "https://niarim.miranima-studio.com/"
+    }
+  }
+  </script>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="mark" viewBox="86 107 328 289">
+    <g fill="none" stroke="currentColor" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M99 383V126l65 103v154H99"/>
+      <path d="M401 383V126l-63 103v154h63"/>
+      <path d="M164 229l86 111 88-111"/>
+      <path d="M174 120h156l-78 132z"/>
+    </g>
+  </symbol>
+  <symbol id="arrow-ne" viewBox="0 0 16 16"><path d="M4.5 11.5l7-7M5.5 4.5h6v6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></symbol>
+  <symbol id="arrow-down" viewBox="0 0 16 16"><path d="M8 2.5v11M3.5 9l4.5 4.5L12.5 9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></symbol>
+  <symbol id="globe" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="8" cy="8" r="6.2"/><path d="M1.8 8h12.4M8 1.8c-2.2 2.3-2.2 10.1 0 12.4M8 1.8c2.2 2.3 2.2 10.1 0 12.4"/></g></symbol>
+  <symbol id="chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+<header class="site-header" data-header>
+  <div class="container header-bar">
+    <a class="brand" href="#top" aria-label="MIRANIMA 페이지 맨 위로">
+      <span class="brand-tile" aria-hidden="true"><svg><use href="#mark"/></svg></span>
+      <span class="brand-word">MIRANIMA</span>
+    </a>
+    <nav class="nav" aria-label="메인 내비게이션">
+      <ul class="nav-list">
+        <li><a href="#name" data-nav>Name</a></li>
+        <li><a href="#niarim" data-nav>NIARIM</a></li>
+        <li><a href="#studio" data-nav>Studio</a></li>
+      </ul>
+      <details class="lang" data-lang>
+        <summary class="lang-btn" aria-label="언어: 한국어">
+          <svg class="icon" aria-hidden="true"><use href="#globe"/></svg><span>한국어</span><svg class="icon lang-chevron" aria-hidden="true"><use href="#chevron"/></svg>
+        </summary>
+        <ul class="lang-list">
+          <li><a href="../" hreflang="ja" lang="ja">日本語</a></li>
+          <li><a href="../en/" hreflang="en" lang="en">English</a></li>
+          <li><a href="../es/" hreflang="es" lang="es">Español</a></li>
+          <li><a href="../fr/" hreflang="fr" lang="fr">Français</a></li>
+          <li><a href="../ko/" hreflang="ko" lang="ko" aria-current="page">한국어</a></li>
+          <li><a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+          <li><a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li>
+        </ul>
+      </details>
+      <a class="nav-cta" href="#contact" data-nav>Contact</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn>
+      <span class="menu-btn-label" data-menu-label>Menu</span>
+      <span class="menu-btn-icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-menu hidden>
+  <nav class="container menu-inner" aria-label="모바일 내비게이션">
+    <ol class="menu-list">
+      <li><a href="#name"><span>01</span>Name<small>이름에 대하여</small></a></li>
+      <li><a href="#niarim"><span>02</span>NIARIM<small>프로덕트</small></a></li>
+      <li><a href="#studio"><span>03</span>Studio<small>사업 정보</small></a></li>
+      <li><a href="#contact"><span>04</span>Contact<small>문의</small></a></li>
+    </ol>
+    <div class="menu-foot">
+      <div class="menu-langs">
+        <p class="label">Language</p>
+        <ul class="menu-lang-list">
+          <li><a href="../" hreflang="ja" lang="ja">日本語</a></li>
+          <li><a href="../en/" hreflang="en" lang="en">English</a></li>
+          <li><a href="../es/" hreflang="es" lang="es">Español</a></li>
+          <li><a href="../fr/" hreflang="fr" lang="fr">Français</a></li>
+          <li><a href="../ko/" hreflang="ko" lang="ko" aria-current="page">한국어</a></li>
+          <li><a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+          <li><a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li>
+        </ul>
+      </div>
+      <a class="menu-mail" href="mailto:contact@miranima-studio.com" data-email="contactEmail">contact@miranima-studio.com</a>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="label hero-label"><span class="label-rule" aria-hidden="true"></span>Independent software brand — Japan</p>
+        <h1 class="hero-title" id="hero-title"><span class="ph">도구에 맞춰</span><br><span class="ph">표현을 바꾸지</span> <span class="ph">않아도 됩니다.</span></h1>
+        <p class="hero-lead">그리고 싶은 것도, 만드는 방식도 사람마다 다릅니다. MIRANIMA는 만드는 사람이 도구의 사정에 맞추는 것이 아니라, 표현하고 싶은 것에서 출발해 도구를 생각합니다.</p>
+        <p class="hero-detail">창작 현장에서 발견한 ‘이렇게 할 수 있다면’을 실제로 쓸 수 있는 소프트웨어로 만듭니다. 첫 번째 프로덕트로 손그림 애니메이션 제작 앱 <b class="latin">NIARIM</b>을 개발·제공하고 있습니다.</p>
+        <div class="hero-actions">
+          <a class="btn btn-ink" href="#niarim">NIARIM 보기<svg class="icon" aria-hidden="true"><use href="#arrow-down"/></svg></a>
+          <a class="text-link" href="#name">MIRANIMA라는 이름</a>
+        </div>
+      </div>
+
+      <figure class="mirror-figure">
+        <div class="mirror" data-mirror
+          data-hint-fine="드래그해서 그려 보세요. 그린 선이 거울처럼 반대쪽에 비칩니다."
+          data-hint-touch="‘손가락으로 그리기’를 탭한 뒤 따라 그려 보세요. 그린 선이 거울처럼 반대쪽에 비칩니다."
+          data-label-draw="손가락으로 그리기"
+          data-label-done="그리기 끝내기">
+          <div class="mirror-frame" aria-hidden="true"></div>
+          <div class="mirror-surface">
+            <img class="mirror-fallback" src="../assets/mark.svg" alt="" width="180" height="165">
+            <canvas class="mirror-canvas" role="img" aria-label="MIRANIMA 심벌을 가운데 선을 축으로 좌우 대칭으로 그린 캔버스. 그린 선은 반대쪽에 거울처럼 비칩니다."></canvas>
+            <span class="mirror-axis" aria-hidden="true"></span>
+            <p class="mirror-tag mirror-tag-l" aria-hidden="true">MIRROR</p>
+            <p class="mirror-tag mirror-tag-r" aria-hidden="true">ANIMA</p>
+            <div class="mirror-buttons">
+              <button class="mirror-btn" type="button" data-mirror-draw hidden aria-pressed="false">손가락으로 그리기</button>
+              <button class="mirror-btn" type="button" data-mirror-clear hidden>지우기</button>
+            </div>
+          </div>
+        </div>
+        <figcaption class="mirror-caption">
+          <span class="label" aria-hidden="true">Fig.</span>
+          <span data-mirror-hint>MIRANIMA 심벌마크.</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="container hero-foot">
+      <p class="label">Tools that follow the maker</p>
+      <p class="label hero-foot-meta">Mirror + Anima<span aria-hidden="true">／</span>Mirai + Animation</p>
+    </div>
+  </section>
+
+  <!-- 01 Name -->
+  <section class="name section" id="name" aria-labelledby="name-title">
+    <div class="container">
+      <header class="sec-head">
+        <p class="label sec-index"><span>01</span>The name</p>
+        <h2 class="sec-title" id="name-title"><span class="ph">이름에 담은</span> <span class="ph">두 가지 의미.</span></h2>
+      </header>
+
+      <figure class="name-figure">
+        <div class="name-diagram" aria-hidden="true" data-name-diagram>
+          <div class="nd-side nd-l">
+            <p class="nd-cap nd-top"><b>MIR</b>ROR</p>
+            <p class="nd-word">MIR</p>
+            <p class="nd-cap nd-bottom"><b>MIR</b>AI</p>
+          </div>
+          <div class="nd-side nd-r">
+            <p class="nd-cap nd-top"><b>ANIMA</b></p>
+            <p class="nd-word">ANIMA</p>
+            <p class="nd-cap nd-bottom"><b>ANIMA</b>TION</p>
+          </div>
+          <span class="nd-seam"></span>
+        </div>
+        <figcaption class="visually-hidden">MIRANIMA라는 이름은 ‘MIRROR+ANIMA’와 ‘MIRAI+ANIMATION’, 두 가지 조합으로 읽을 수 있습니다.</figcaption>
+      </figure>
+
+      <div class="meanings">
+        <article class="meaning">
+          <p class="label meaning-formula"><span>01</span>Mirror + Anima</p>
+          <h3 class="meaning-title">만드는 사람의 내면을 비추는 거울.</h3>
+          <p>Anima는 영혼이나 생명을 뜻하는 말입니다. 크리에이터의 감성과 머릿속 이미지를 생각한 그대로 비추어 내는, 거울 같은 도구를 만들고 싶습니다. 사용하는 사람의 표현을 정해 버리지 않고, 그 사람의 생각을 받아들이는 존재를 지향합니다.</p>
+        </article>
+        <article class="meaning">
+          <p class="label meaning-formula"><span>02</span>Mirai + Animation</p>
+          <h3 class="meaning-title">앞으로의 표현을 함께 만듭니다.</h3>
+          <p>Mirai는 일본어로 ‘미래’라는 뜻입니다. Animation에는 움직임을 주는 것, 생명을 불어넣는 것이라는 의미가 있습니다. 새로운 제작 방식과 표현에 도전하는 사람을 도구를 통해 돕고 싶습니다. 그 바람도 이 이름에 담았습니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 NIARIM -->
+  <section class="product section" id="niarim" aria-labelledby="niarim-title">
+    <div class="container">
+      <header class="sec-head sec-head-product">
+        <p class="label sec-index"><span>02</span>First product</p>
+        <p class="label product-platform"><span class="product-dot" aria-hidden="true"></span><span>Android / <span class="nowrap">Hand-drawn animation</span></span></p>
+      </header>
+
+      <div class="product-intro">
+        <div class="product-id">
+          <h2 class="product-name" id="niarim-title">NIARIM</h2>
+          <p class="product-tagline">한 장씩 그려서, 움직임으로.</p>
+        </div>
+        <div class="product-body">
+          <p class="product-lead">NIARIM은 스마트폰이나 태블릿에서 손그림 애니메이션을 만드는 Android 앱입니다.</p>
+          <p>캔버스에 그림을 그리고, 다음 프레임을 겹치고, 재생하면서 움직임을 다듬습니다. 그리기부터 편집, 오디오, 동영상 내보내기까지 작품 제작의 흐름을 하나의 앱에서 진행할 수 있습니다.</p>
+          <div class="product-actions">
+            <a class="btn btn-niarim" href="https://niarim.miranima-studio.com/?lang=ko" target="_blank" rel="noopener">NIARIM 공식 사이트<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg><span class="visually-hidden">(새 탭에서 열림)</span></a>
+            <a class="text-link text-link-ext" href="https://play.google.com/store/apps/details?id=com.niarim.niarim&amp;hl=ko" target="_blank" rel="noopener">Google Play에서 보기<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg><span class="visually-hidden">(새 탭에서 열림)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Playback: the "ball bounce" sample, one frame at a time -->
+      <div class="flipbook is-onion" data-flipbook
+        data-label-play="재생"
+        data-label-pause="일시정지">
+        <div class="fb-stage">
+          <p class="label fb-label">Playback<span>8 fps</span></p>
+          <svg class="fb-view" viewBox="0 0 120 90" role="img" aria-labelledby="fb-title">
+            <title id="fb-title">공이 튀는 애니메이션</title>
+            <defs><clipPath id="fb-ball-clip"><circle r="10"/></clipPath><g id="fb-ball"><circle r="10" fill="#f06858"/><g clip-path="url(#fb-ball-clip)"><rect x="-3.4" y="-14" width="6.8" height="28" fill="#f8e0a0"/><path d="M-3.4 -14v28M3.4 -14v28" stroke="#282838" stroke-width="1.1" vector-effect="non-scaling-stroke"/></g><ellipse cx="-5" cy="-4.6" rx="2.8" ry="1.3" fill="#fff" opacity=".6"/><circle r="10" fill="none" stroke="#282838" stroke-width="1.6" vector-effect="non-scaling-stroke"/></g><g id="fb-ground"><path d="M4 80H116" stroke="#282838" stroke-width="1.6" vector-effect="non-scaling-stroke"/><path d="M14 80l-1.5-3M16 80v-3.4M18 80l1.5-3M100 80l-1.5-3M102 80v-3.4M104 80l1.5-3" stroke="#282838" stroke-width="1.2" stroke-linecap="round" fill="none" vector-effect="non-scaling-stroke"/></g><g id="fb-f0"><ellipse class="fb-shadow" cx="18" cy="81" rx="5" ry="1.6"/><use href="#fb-ball" transform="translate(18 18) rotate(-40)"/></g><g id="fb-f1"><ellipse class="fb-shadow" cx="31" cy="81" rx="6" ry="1.6"/><use href="#fb-ball" transform="translate(31 32) rotate(-28) scale(.96 1.06)"/></g><g id="fb-f2"><ellipse class="fb-shadow" cx="43" cy="81" rx="7.5" ry="1.6"/><use href="#fb-ball" transform="translate(43 49) rotate(-16) scale(.92 1.12)"/></g><g id="fb-f3"><ellipse class="fb-shadow" cx="53" cy="81" rx="9" ry="1.6"/><use href="#fb-ball" transform="translate(53 64) rotate(-6) scale(.92 1.1)"/></g><g id="fb-f4"><ellipse class="fb-shadow" cx="62" cy="81" rx="15" ry="1.6"/><use href="#fb-ball" transform="translate(62 73.4) scale(1.45 .66) rotate(8)"/></g><g id="fb-f5"><ellipse class="fb-shadow" cx="72" cy="81" rx="9" ry="1.6"/><use href="#fb-ball" transform="translate(72 60) rotate(20) scale(.92 1.12)"/></g><g id="fb-f6"><ellipse class="fb-shadow" cx="84" cy="81" rx="7" ry="1.6"/><use href="#fb-ball" transform="translate(84 44) rotate(34) scale(.96 1.05)"/></g><g id="fb-f7"><ellipse class="fb-shadow" cx="97" cy="81" rx="6" ry="1.6"/><use href="#fb-ball" transform="translate(97 32) rotate(46)"/></g><circle id="fb-g0" r="10" transform="translate(18 18) rotate(-40)"/><circle id="fb-g1" r="10" transform="translate(31 32) rotate(-28) scale(.96 1.06)"/><circle id="fb-g2" r="10" transform="translate(43 49) rotate(-16) scale(.92 1.12)"/><circle id="fb-g3" r="10" transform="translate(53 64) rotate(-6) scale(.92 1.1)"/><circle id="fb-g4" r="10" transform="translate(62 73.4) scale(1.45 .66) rotate(8)"/><circle id="fb-g5" r="10" transform="translate(72 60) rotate(20) scale(.92 1.12)"/><circle id="fb-g6" r="10" transform="translate(84 44) rotate(34) scale(.96 1.05)"/><circle id="fb-g7" r="10" transform="translate(97 32) rotate(46)"/></defs>
+            <use href="#fb-ground"/>
+            <use class="fb-ghost fb-ghost-prev" href="#fb-g3" data-fb-prev/>
+            <use class="fb-ghost fb-ghost-next" href="#fb-g5" data-fb-next/>
+            <use href="#fb-f4" data-fb-current/>
+          </svg>
+        </div>
+        <div class="fb-side">
+          <p class="label fb-strip-label">Frames<span><span data-fb-count>05</span> / 08</span></p>
+          <ol class="fb-cells" aria-label="프레임">
+            <li><button class="fb-cell" type="button" data-fb-cell="0" aria-pressed="false" aria-label="1번째 프레임 보기"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f0"/></svg><span class="fb-cell-no">01</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="1" aria-pressed="false" aria-label="2번째 프레임 보기"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f1"/></svg><span class="fb-cell-no">02</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="2" aria-pressed="false" aria-label="3번째 프레임 보기"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f2"/></svg><span class="fb-cell-no">03</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="3" aria-pressed="false" aria-label="4번째 프레임 보기"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f3"/></svg><span class="fb-cell-no">04</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="4" aria-pressed="true" aria-label="5번째 프레임 보기"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f4"/></svg><span class="fb-cell-no">05</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="5" aria-pressed="false" aria-label="6번째 프레임 보기"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f5"/></svg><span class="fb-cell-no">06</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="6" aria-pressed="false" aria-label="7번째 프레임 보기"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f6"/></svg><span class="fb-cell-no">07</span></button></li>
+            <li><button class="fb-cell" type="button" data-fb-cell="7" aria-pressed="false" aria-label="8번째 프레임 보기"><svg viewBox="0 0 120 90" aria-hidden="true" focusable="false"><use href="#fb-ground"/><use href="#fb-f7"/></svg><span class="fb-cell-no">08</span></button></li>
+          </ol>
+          <div class="fb-controls">
+            <button class="fb-btn fb-play" type="button" data-fb-play hidden><span class="fb-play-icon" aria-hidden="true"></span><span data-fb-play-label>재생</span></button>
+            <button class="fb-btn fb-onion" type="button" data-fb-onion aria-pressed="true" hidden><span class="fb-onion-icon" aria-hidden="true"><i></i><i></i></span>어니언 스킨</button>
+          </div>
+          <p class="fb-caption">튀는 공을 한 프레임씩 늘어놓았습니다. 어니언 스킨을 켜면 앞뒤 프레임이 옅게 겹쳐 보입니다.</p>
+        </div>
+      </div>
+
+      <div class="reel" data-reel>
+        <div class="reel-scroller" tabindex="0" role="region" aria-label="NIARIM으로 작품을 만드는 흐름 (실제 앱 화면)" data-reel-scroller>
+          <ol class="reel-track">
+            <li class="frame">
+              <p class="frame-no" aria-hidden="true">F.01</p>
+              <figure class="frame-fig">
+                <div class="phone"><img src="https://niarim.miranima-studio.com/assets/images/app-captures/canvas-ko.webp" alt="NIARIM 캔버스에서 공을 그리고 있는 실제 앱 화면" width="640" height="1138" loading="lazy" decoding="async"></div>
+                <figcaption>
+                  <span class="label frame-step">01 — Draw</span>
+                  <strong class="frame-title">한 장씩 그린다.</strong>
+                  <span class="frame-text">브러시와 레이어로 그림을 그려 나갑니다.</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="frame">
+              <p class="frame-no" aria-hidden="true">F.02</p>
+              <figure class="frame-fig">
+                <div class="phone"><img src="https://niarim.miranima-studio.com/assets/images/app-captures/onion-skin-ko.webp" alt="앞뒤 프레임을 겹쳐 확인하는 NIARIM의 어니언 스킨 화면" width="640" height="1138" loading="lazy" decoding="async"></div>
+                <figcaption>
+                  <span class="label frame-step">02 — Check motion</span>
+                  <strong class="frame-title">움직임을 비교한다.</strong>
+                  <span class="frame-text">앞뒤 프레임을 겹쳐서 그림이 자연스럽게 이어지는지 확인합니다.</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="frame">
+              <p class="frame-no" aria-hidden="true">F.03</p>
+              <figure class="frame-fig">
+                <div class="phone"><img src="https://niarim.miranima-studio.com/assets/images/app-captures/timeline-ko.webp" alt="프레임과 클립을 배치해 편집하는 NIARIM의 타임라인 화면" width="640" height="1138" loading="lazy" decoding="async"></div>
+                <figcaption>
+                  <span class="label frame-step">03 — Arrange</span>
+                  <strong class="frame-title">타임라인에서 완성한다.</strong>
+                  <span class="frame-text">프레임과 영상, 오디오를 배치해 작품 전체를 구성합니다.</span>
+                </figcaption>
+              </figure>
+            </li>
+          </ol>
+        </div>
+        <div class="reel-controls" data-reel-controls hidden>
+          <p class="label reel-count" aria-hidden="true"><span data-reel-current>01</span> / 03</p>
+          <div class="reel-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <p class="product-note">실제 앱에서 촬영한 화면이며 업데이트에 따라 달라질 수 있습니다.</p>
+    </div>
+  </section>
+
+  <!-- 03 Studio -->
+  <section class="studio section" id="studio" aria-labelledby="studio-title">
+    <div class="container">
+      <header class="sec-head">
+        <p class="label sec-index"><span>03</span>Studio</p>
+      </header>
+
+      <div class="studio-grid">
+        <div class="studio-intro">
+          <h2 class="studio-name" id="studio-title">MIRANIMA<span class="studio-reading">미라니마</span></h2>
+          <p class="studio-copy">MIRANIMA는 크리에이터를 위한 소프트웨어를 기획·개발하는 상호입니다. 현재는 손그림 애니메이션 제작 앱 ‘NIARIM’을 중심으로 개발·운영하고 있습니다.</p>
+        </div>
+
+        <div class="studio-body">
+          <dl class="facts">
+            <div class="fact"><dt>상호</dt><dd>MIRANIMA (ミラニマ)</dd></div>
+            <div class="fact"><dt>사업 형태</dt><dd>개인사업</dd></div>
+            <div class="fact"><dt>대표자·소재지·전화번호</dt><dd>요청이 있으면 지체 없이 공개합니다.</dd></div>
+            <div class="fact">
+              <dt>특정상거래법에 따른 표기</dt>
+              <dd>
+                <a class="fact-link" href="https://niarim.miranima-studio.com/tokushoho/?lang=ko" target="_blank" rel="noopener">NIARIM Premium의 특정상거래법에 따른 표기<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg><span class="visually-hidden">(새 탭에서 열림)</span></a>
+                <small>링크된 페이지는 NIARIM Premium의 판매 조건에 관한 표기입니다.</small>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Contact -->
+  <section class="contact section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <header class="sec-head sec-head-dark">
+        <p class="label sec-index"><span>04</span>Contact</p>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-intro">
+          <h2 class="contact-title" id="contact-title">문의</h2>
+          <p>프로덕트에 관한 질문, 거래나 협업 상담 등은 이메일로 연락해 주세요. 내용을 확인한 후 답변드리겠습니다.</p>
+        </div>
+        <svg class="contact-mark" aria-hidden="true"><use href="#mark"/></svg>
+      </div>
+
+      <ul class="mails">
+        <li class="mail mail-primary">
+          <p class="label mail-label">General inquiries<span>상담·거래 등</span></p>
+          <div class="mail-target"><a class="mail-address" href="mailto:contact@miranima-studio.com" data-email="contactEmail"><span data-email-text>contact@miranima-studio.com</span><svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg></a></div>
+        </li>
+        <li class="mail">
+          <p class="label mail-label">NIARIM support<span>앱 오류·사용 방법 등</span></p>
+          <div class="mail-target"><a class="mail-address" href="mailto:support@miranima-studio.com" data-email="supportEmail"><span data-email-text>support@miranima-studio.com</span><svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg></a></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <a class="brand brand-on-ink" href="#top" aria-label="MIRANIMA 페이지 맨 위로">
+      <span class="brand-tile" aria-hidden="true"><svg><use href="#mark"/></svg></span>
+      <span class="brand-word">MIRANIMA</span>
+    </a>
+    <p class="footer-motto">Tools that follow the maker.</p>
+    <a class="label footer-top" href="#top">Back to top<svg class="icon" aria-hidden="true"><use href="#arrow-down"/></svg></a>
+    <p class="footer-meta"><span>© <span data-year>2026</span> MIRANIMA</span><span>상호: MIRANIMA</span></p>
+  </div>
+</footer>
+</body>
+</html>

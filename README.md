@@ -23,19 +23,42 @@ MIRANIMAのブランドサイトです。静的HTML / CSS / JavaScriptで構成�
 - 代表者・所在地・電話番号：ご請求があった場合は、遅滞なく開示する旨を掲載しています。
 - NIARIM Premiumの特定商取引法に基づく表記：<https://niarim.miranima-studio.com/tokushoho/>
 
+## Languages
+
+NIARIM公式サイトと同じ7言語に対応しています：日本語（/）・English（/en/）・Español（/es/）・Français（/fr/）・한국어（/ko/）・简体中文（/zh-hans/）・繁體中文（/zh-hant/）。
+
+各言語のページは、1つのテンプレートと言語ごとの文言ファイルから生成します（デプロイ時のビルドは不要で、生成済みのHTMLをそのまま配信します）。
+
+- 文言を直す：`src/locales/<言語>.json` を編集
+- 構造を直す：`src/template.html`（404ページは `src/404.html`）を編集
+- そのあと必ず実行：
+
+```bash
+node tools/build.mjs
+```
+
+`index.html`・`404.html`・`en/` などの各言語フォルダ・`sitemap.xml` は生成物なので、直接編集しないでください。
+SNS共有画像（`assets/og/<言語>.png`）を作り直すときは `node tools/render-og.mjs`（Playwrightが必要）を実行します。
+
 ## Project files
 
-- index.html — ページ構造・日本語コピー（共通SVGシンボル、OGP、構造化データを含む）
-- 404.html — 存在しないURL用のページ（Cloudflare Pagesが正しく404を返すために必要）
+- src/template.html — 全言語共通のページ構造（`{{...}}` が文言・設定の差し込み位置）
+- src/404.html — 全言語共通の404ページ構造
+- src/locales/*.json — 言語ごとの文言・フォント・NIARIM画面の言語設定
+- tools/build.mjs — 上記から各言語の index.html / 404.html と sitemap.xml を生成
+- tools/render-og.mjs — 言語ごとのSNS共有画像を生成
+- index.html / 404.html / en/ / es/ / fr/ / ko/ / zh-hans/ / zh-hant/ — 生成済みページ（直接編集しない）
+- sitemap.xml / robots.txt — 検索エンジン向け（言語別URLの対応関係を含む）
 - _headers — Cloudflare Pages用のキャッシュ・セキュリティヘッダー
-- styles/core.css — デザイントークン、タイポグラフィ、ヘッダー、モバイルメニュー、フッター
+- styles/core.css — デザイントークン、言語別のタイポグラフィ、ヘッダー、言語切り替え、モバイルメニュー、フッター
 - styles/home.css — Hero / Name / NIARIM / Studio / Contact の各セクションとレスポンシブ
-- script.js — 連絡先・リンク設定の反映、モバイルメニュー、現在地ナビ、NIARIMリールの位置表示
+- script.js — 連絡先の反映、モバイルメニュー、言語切り替え、現在地ナビ、名前の分割モーション、NIARIMリールの位置表示
 - mirror.js — Heroの鏡キャンバス（描いた線を中央軸で左右に映す）
-- site.config.js — official email addresses and URLs
+- flipbook.js — NIARIM欄の再生デモ（サンプル「ボールのバウンド」を1フレームずつ再生）
+- site.config.js — official email addresses and URLs（変更後は `node tools/build.mjs` を実行）
 - assets/mark.svg — MIRANIMA symbol（ライム、暗い背景用）
 - assets/favicon.svg / assets/apple-touch-icon.png — アイコン（インクの面にライムのシンボル）
-- assets/og-image.png — SNS共有画像（1200×630）
+- assets/og/*.png — 言語ごとのSNS共有画像（1200×630）
 - DESIGN_BRIEF.md — design rationale and content accuracy rules
 
 ## Git workflow

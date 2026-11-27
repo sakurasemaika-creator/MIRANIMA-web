@@ -1,4 +1,4 @@
-/* MIRANIMA — page behaviour: config, header, menu, section state, NIARIM reel. */
+/* MIRANIMA — page behaviour: config, header, menu, language switcher, section state, name motion, NIARIM reel. */
 (() => {
   const config = window.MIRANIMA_CONFIG || {};
   const root = document.documentElement;
@@ -10,10 +10,6 @@
     link.href = `mailto:${address}`;
     const text = link.querySelector('[data-email-text]') || (link.children.length ? null : link);
     if (text) text.textContent = address;
-  });
-  document.querySelectorAll('[data-link]').forEach((link) => {
-    const url = config[link.dataset.link];
-    if (url) link.href = url;
   });
 
   const year = document.querySelector('[data-year]');
@@ -60,6 +56,40 @@
     window.matchMedia('(min-width: 861px)').addEventListener('change', (event) => {
       if (event.matches && !menu.hidden) setMenu(false, { restoreFocus: false });
     });
+  }
+
+  /* ---------- Language switcher (a <details> element, so it also works without JS) ---------- */
+  const langMenus = [...document.querySelectorAll('[data-lang]')];
+  if (langMenus.length) {
+    document.addEventListener('click', (event) => {
+      langMenus.forEach((menuEl) => { if (menuEl.open && !menuEl.contains(event.target)) menuEl.open = false; });
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      langMenus.forEach((menuEl) => {
+        if (!menuEl.open) return;
+        menuEl.open = false;
+        const summary = menuEl.querySelector('summary');
+        if (summary) summary.focus();
+      });
+    });
+  }
+
+  /* ---------- Name: the word parts along the mirror axis when it comes into view ---------- */
+  const diagram = document.querySelector('[data-name-diagram]');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (diagram && 'IntersectionObserver' in window && !reduceMotion) {
+    const rect = diagram.getBoundingClientRect();
+    const alreadyPassed = rect.bottom < window.innerHeight * 0.5; // e.g. reloaded further down the page
+    if (!alreadyPassed) {
+      diagram.classList.add('is-joined');
+      const split = new IntersectionObserver((entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        requestAnimationFrame(() => diagram.classList.remove('is-joined'));
+        split.disconnect();
+      }, { threshold: 0.6 });
+      split.observe(diagram);
+    }
   }
 
   /* ---------- Current section in the header navigation ---------- */

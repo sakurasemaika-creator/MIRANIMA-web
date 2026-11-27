@@ -40,6 +40,15 @@
   --sans: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
   --latin: "DM Sans", "Helvetica Neue", Arial, sans-serif;
 
+  /* Script-dependent rhythm (overridden per language below) */
+  --fs-body-base: 1rem;
+  --fs-body-compact: .9375rem;
+  --lh-body: 1.95;
+  --ls-body: .02em;
+  --lh-heading: 1.5;
+  --ls-heading: .04em;
+  --ff-heading: "palt";
+
   --fs-label: .75rem;                                   /* 12 */
   --fs-small: .8125rem;                                 /* 13 */
   --fs-body: 1rem;                                      /* 16 */
@@ -54,6 +63,37 @@
   --section-y: clamp(88px, 11vw, 168px);
 
   --ease: cubic-bezier(.2, .7, .2, 1);
+}
+
+/* ---------- Languages: same set as the NIARIM official site ---------- */
+:root:lang(ko) {
+  --serif: "Noto Serif KR", "Nanum Myeongjo", "AppleMyungjo", serif;
+  --sans: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --lh-body: 1.85;
+  --ls-body: 0em;
+  --ls-heading: 0em;
+  --ff-heading: normal;
+}
+:root:lang(zh-Hans) {
+  --serif: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  --sans: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --lh-body: 1.9;
+}
+:root:lang(zh-Hant) {
+  --serif: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  --sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --lh-body: 1.9;
+}
+:root:is(:lang(en), :lang(es), :lang(fr)) {
+  --serif: "Shippori Mincho", Georgia, "Times New Roman", serif;
+  --sans: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --fs-body-base: 1.0625rem;
+  --fs-body-compact: 1rem;
+  --lh-body: 1.65;
+  --ls-body: 0em;
+  --lh-heading: 1.2;
+  --ls-heading: -.005em;
+  --ff-heading: normal;
 }
 
 /* ---------- Reset / base ---------- */
@@ -72,10 +112,10 @@ body {
   background: var(--paper);
   color: var(--text);
   font-family: var(--sans);
-  font-size: var(--fs-body);
+  font-size: var(--fs-body-base);
   font-weight: 400;
-  line-height: 1.95;
-  letter-spacing: .02em;
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -93,17 +133,20 @@ ol, ul { padding: 0; list-style: none; }
 p, dd, figcaption, li { text-wrap: pretty; }
 h1, h2, h3 { text-wrap: balance; }
 
-/* Phrase-aware Japanese line breaking where supported (keeps words like 「します。」 together). */
+/* Japanese: phrase-aware line breaking where supported (keeps words like 「します。」 together),
+   and short paragraphs balanced so no line ends on a stranded 「す。」. */
 @supports (word-break: auto-phrase) {
-  h1, h2, h3, dt, dd, small, figcaption, strong, .label, .product-tagline, .frame-text, .menu-list small {
+  :lang(ja) :is(h1, h2, h3, dt, dd, small, figcaption, strong, .label, .product-tagline, .frame-text, .menu-list small,
+    .hero-lead, .hero-detail, .product-lead, .contact-intro p, .studio-copy, .fb-caption) {
     word-break: auto-phrase;
   }
 }
-/* Short paragraphs: break between phrases and even out line lengths, so no line ends on a stranded 「す。」. */
-.hero-lead, .hero-detail, .product-lead, .contact-intro p, .studio-copy { text-wrap: balance; }
-@supports (word-break: auto-phrase) {
-  .hero-lead, .hero-detail, .product-lead, .contact-intro p, .studio-copy { word-break: auto-phrase; }
+:is(:lang(ja), :lang(zh-Hans), :lang(zh-Hant), :lang(ko)) :is(.hero-lead, .hero-detail, .product-lead, .contact-intro p, .studio-copy, .fb-caption) {
+  text-wrap: balance;
 }
+/* Korean breaks between words, not syllables. */
+:lang(ko) body { word-break: keep-all; }
+/* Latin text: no automatic hyphenation (it would split names such as MIRANIMA); text-wrap: pretty evens the rag. */
 
 ::selection { background: var(--lime); color: var(--ink); }
 
@@ -204,9 +247,9 @@ h1, h2, h3 { text-wrap: balance; }
   font-family: var(--serif);
   font-size: var(--fs-h2);
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: .04em;
-  font-feature-settings: "palt";
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-heading);
+  font-feature-settings: var(--ff-heading);
 }
 
 /* ---------- Header ---------- */
@@ -249,7 +292,7 @@ h1, h2, h3 { text-wrap: balance; }
 
 .nav { display: flex; align-items: center; gap: clamp(24px, 3vw, 44px); }
 .nav-list { display: flex; gap: clamp(20px, 2.6vw, 40px); }
-.nav a {
+.nav-list a, .nav .nav-cta {
   position: relative;
   display: inline-flex; align-items: center;
   min-height: 44px;
@@ -299,6 +342,46 @@ h1, h2, h3 { text-wrap: balance; }
 .menu-btn[aria-expanded="true"] .menu-btn-icon i:first-child { top: 4.25px; transform: rotate(45deg); }
 .menu-btn[aria-expanded="true"] .menu-btn-icon i:last-child { top: 4.25px; transform: rotate(-45deg); }
 
+/* ---------- Language switcher ---------- */
+.lang { position: relative; }
+.lang-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 44px;
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--latin);
+  font-size: .8125rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: var(--text-soft);
+  transition: color .2s var(--ease);
+}
+.lang-btn::-webkit-details-marker { display: none; }
+.lang-btn:hover, .lang[open] .lang-btn { color: var(--text); }
+.lang-btn .icon { width: 15px; height: 15px; }
+.lang-btn .lang-chevron { width: 12px; height: 12px; transition: transform .25s var(--ease); }
+.lang[open] .lang-chevron { transform: rotate(180deg); }
+.lang-list {
+  position: absolute; right: -16px; top: calc(100% + 10px); z-index: 50;
+  min-width: 200px;
+  padding: 8px 0;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 48px -28px rgba(32, 37, 31, .45);
+}
+.lang-list a, .menu-lang-list a {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  min-height: 44px;
+  font-size: .9375rem;
+  transition: color .2s var(--ease), background-color .2s var(--ease);
+}
+.lang-list a { padding: 0 20px; color: var(--text-soft); }
+.lang-list a:hover { background: var(--paper-sunk); color: var(--text); }
+.lang-list a[aria-current="page"], .menu-lang-list a[aria-current="page"] { color: var(--text); font-weight: 600; }
+.lang-list a[aria-current="page"]::after, .menu-lang-list a[aria-current="page"]::after {
+  content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--lime-ink);
+}
+
 /* ---------- Mobile menu ---------- */
 .menu {
   position: fixed; z-index: 35; inset: var(--header-h) 0 0;
@@ -326,7 +409,12 @@ h1, h2, h3 { text-wrap: balance; }
   font-size: var(--fs-label); font-weight: 600; letter-spacing: .14em; color: var(--muted);
 }
 .menu-list a small { font-family: var(--sans); font-size: var(--fs-small); color: var(--muted); letter-spacing: .04em; }
-.menu-foot a {
+.menu-foot { display: grid; gap: 28px; }
+.menu-langs .label { color: var(--muted); }
+.menu-lang-list { display: flex; flex-wrap: wrap; gap: 0 24px; margin-top: 4px; }
+.menu-lang-list a { justify-content: flex-start; gap: 8px; color: var(--text-soft); }
+.menu-mail {
+  justify-self: start;
   display: inline-flex; min-height: 44px; align-items: center;
   font-family: var(--latin); font-size: 1rem; font-weight: 500;
   border-bottom: 1px solid var(--ink);
@@ -373,7 +461,7 @@ html.menu-open { overflow: hidden; }
 }
 
 @media (max-width: 600px) {
-  body { font-size: .9375rem; line-height: 1.9; }
+  body { font-size: var(--fs-body-compact); }
   .footer-grid { grid-template-columns: 1fr auto; gap: 20px 16px; }
   .footer-motto { grid-column: 1 / -1; grid-row: 2; }
   .footer-meta { flex-direction: column; }
