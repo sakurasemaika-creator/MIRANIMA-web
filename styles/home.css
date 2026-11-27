@@ -291,6 +291,7 @@
 .product-body .product-lead { color: var(--text); font-size: var(--fs-lead); font-weight: 500; line-height: 1.9; }
 .product-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; margin-top: 32px; }
 .btn-niarim { background: var(--niarim); color: var(--ink); }
+.product-store-note { margin-top: 14px; color: var(--muted); font-size: var(--fs-small); }
 .btn-niarim:hover { background: #ff7a92; }
 .btn-niarim:hover .icon { transform: translate(2px, -2px); }
 
@@ -309,7 +310,7 @@
   display: flex; justify-content: space-between; gap: 16px;
   color: var(--text);
 }
-.fb-label span, .fb-strip-label span { color: var(--niarim-ink); font-variant-numeric: tabular-nums; }
+.fb-label span, .fb-strip-label > span + span { color: var(--niarim-ink); font-variant-numeric: tabular-nums; }
 .fb-view {
   width: 100%; height: auto;
   margin-top: 16px;
@@ -571,7 +572,7 @@
   border-bottom: 1px solid var(--on-ink-line);
 }
 .mail-label { display: grid; gap: 6px; color: var(--on-ink); }
-.mail-label span {
+.mail-label .mail-sub {
   font-family: var(--sans); font-size: var(--fs-small); font-weight: 400;
   letter-spacing: .04em; text-transform: none; color: var(--on-ink-muted);
 }

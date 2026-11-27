@@ -16,7 +16,7 @@
       "skip": "跳到正文",
       "home": "MIRANIMA 回到頁面頂端",
       "mainNav": "主要導覽",
-      "mobileNav": "行動版導覽",
+      "mobileNav": "手機版導覽",
       "language": "語言",
       "newTab": "（在新分頁中開啟）",
       "homePage": "MIRANIMA 首頁"
@@ -56,7 +56,8 @@
       "lead": "NIARIM 是一款在手機或平板上製作手繪動畫的 Android 應用程式。",
       "body": "在畫布上繪圖，疊上下一個影格，一邊播放一邊調整動作。從繪圖、編輯到音訊編輯與影片匯出，整個創作流程都能在一個應用程式裡完成。",
       "site": "NIARIM 官方網站",
-      "play": "在 Google Play 查看"
+      "play": "在 Google Play 查看",
+      "storeNote": ""
     },
     "flip": {
       "title": "彈跳小球動畫",
@@ -82,13 +83,13 @@
     },
     "studio": {
       "reading": "mi·ra·ni·ma",
-      "copy": "MIRANIMA 是我們企劃、開發給創作者使用的軟體時所用的商號。目前，我們主要在開發與營運手繪動畫製作應用程式「NIARIM」。",
+      "copy": "MIRANIMA 是個人經營的商號，為創作者企劃、開發軟體。目前，我們主要在開發與營運手繪動畫製作應用程式「NIARIM」。",
       "tradeName": "商號",
       "tradeNameValue": "MIRANIMA（ミラニマ）",
       "form": "組織型態",
       "formValue": "個人經營",
       "disclosure": "負責人、地址、電話號碼",
-      "disclosureValue": "收到請求後，我們將不遲延地提供上述資訊。",
+      "disclosureValue": "收到請求後，我們將及時提供上述資訊。",
       "legal": "依據日本《特定商業交易法》之標示",
       "legalLink": "NIARIM Premium：依據日本《特定商業交易法》之標示",
       "legalNote": "連結頁面為 NIARIM Premium 銷售條件的相關標示。",
@@ -99,7 +100,7 @@
       "text": "關於產品的疑問、業務往來或合作洽談，請透過電子郵件與我們聯絡。我們確認內容後會回覆您。",
       "general": "諮詢、業務往來等",
       "support": "應用程式故障、使用方法等",
-      "languageNote": "MIRANIMA 由一位身在日本的開發者獨自營運。開發者會藉助翻譯工具，將來信譯成日文閱讀並回覆，因此可能需要稍長一些的時間，內容也可能較為簡潔。"
+      "languageNote": "歡迎用中文來信。MIRANIMA 由一位身在日本的開發者獨自營運，會藉助翻譯工具把您的來信譯成日文閱讀，並以同樣的方式回覆，因此可能需要稍長一些的時間，內容也可能較為簡潔。"
     },
     "footer": {
       "tradeName": "商號：MIRANIMA"
@@ -109,6 +110,12 @@
       "title": "<span class=\"ph\">找不到</span><span class=\"ph\">您要造訪的頁面。</span>",
       "text": "網址可能已變更，或頁面已被刪除。",
       "back": "返回首頁"
+    },
+    "ui": {
+      "menu": "選單",
+      "close": "關閉",
+      "language": "語言",
+      "backToTop": "回到頂端"
     }
   }
 }

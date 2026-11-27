@@ -34,7 +34,7 @@
     if (!menuBtn || !menu) return;
     menu.hidden = !open;
     menuBtn.setAttribute('aria-expanded', String(open));
-    if (menuLabel) menuLabel.textContent = open ? 'Close' : 'Menu';
+    if (menuLabel) menuLabel.textContent = open ? (menuBtn.dataset.labelClose || 'Close') : (menuBtn.dataset.labelOpen || 'Menu');
     root.classList.toggle('menu-open', open);
     [main, footer].forEach((el) => { if (el) el.inert = open; });
     if (open) {

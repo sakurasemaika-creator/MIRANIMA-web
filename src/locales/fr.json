@@ -8,7 +8,7 @@
   "fonts": "family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400&family=Shippori+Mincho:wght@500;600",
   "t": {
     "meta": {
-      "title": "MIRANIMA — Vous n’avez pas à adapter votre expression à vos outils.",
+      "title": "MIRANIMA — Votre façon de créer n’a pas à s’adapter à vos outils.",
       "description": "MIRANIMA est une marque de logiciels japonaise qui conçoit ses outils à partir de ce que les créateurs veulent exprimer. Nous développons NIARIM, une application Android d’animation dessinée à la main.",
       "ogDescription": "Des outils pensés à partir de ce que vous voulez exprimer. La marque de logiciels à l’origine de NIARIM, une application d’animation dessinée à la main."
     },
@@ -28,7 +28,7 @@
       "contact": "Nous écrire"
     },
     "hero": {
-      "title": "Vous n’avez pas à adapter votre expression à vos outils.",
+      "title": "Votre façon de créer n’a pas à s’adapter à vos outils.",
       "lead": "Ce que l’on veut dessiner, et la manière de le créer, diffèrent d’une personne à l’autre. Plutôt que de demander aux créateurs de s’adapter aux contraintes de l’outil, MIRANIMA conçoit ses outils à partir de ce qu’ils veulent exprimer.",
       "detail": "Nous transformons en logiciels réellement utilisables les « si seulement on pouvait… » qui surgissent en pleine création. Notre premier produit est <b class=\"latin\">NIARIM</b>, une application d’animation dessinée à la main.",
       "ctaNiarim": "Découvrir NIARIM",
@@ -47,16 +47,17 @@
       "title": "Deux sens dans un seul nom.",
       "figcaption": "Le nom MIRANIMA se lit de deux façons : MIRROR (miroir) + ANIMA, et MIRAI (avenir) + ANIMATION.",
       "m1Title": "Un miroir de l’univers intérieur des créateurs.",
-      "m1Text": "Anima est un mot qui désigne l’âme, la vie. Nous voulons créer des outils qui agissent comme un miroir, capables de refléter la sensibilité des personnes qui créent et les images qu’elles ont en tête, exactement comme elles les imaginent. Des outils qui n’imposent pas une manière de s’exprimer, mais qui accueillent les idées de chaque personne.",
+      "m1Text": "Anima est un mot latin qui désigne l’âme, la vie. Nous voulons créer des outils qui agissent comme un miroir, capables de refléter la sensibilité des personnes qui créent et les images qu’elles ont en tête, exactement comme elles les imaginent. Des outils qui n’imposent pas une manière de s’exprimer, mais qui accueillent les idées de chaque personne.",
       "m2Title": "Façonner ensemble l’expression de demain.",
       "m2Text": "Mirai signifie « avenir » en japonais. Animation veut dire donner du mouvement, insuffler la vie. À travers nos outils, nous voulons accompagner celles et ceux qui explorent de nouvelles façons de créer et de s’exprimer. Ce souhait est lui aussi inscrit dans le nom."
     },
     "product": {
       "tagline": "Dessinez image par image, et mettez vos dessins en mouvement.",
       "lead": "NIARIM est une application Android pour créer de l’animation dessinée à la main sur téléphone ou tablette.",
-      "body": "Dessinez sur la toile, superposez l’image suivante et ajustez le mouvement pendant la lecture. Du dessin au montage, du montage audio à l’export vidéo, tout se fait dans une seule application.",
+      "body": "Dessinez sur la toile, superposez l’image suivante et ajustez le mouvement pendant la lecture. Du dessin au montage, du montage audio à l’exportation vidéo, tout se fait dans une seule application.",
       "site": "Site officiel de NIARIM",
-      "play": "Voir sur Google Play"
+      "play": "Voir sur Google Play",
+      "storeNote": ""
     },
     "flip": {
       "title": "Animation d’une balle qui rebondit",
@@ -96,10 +97,10 @@
     },
     "contact": {
       "title": "Contact",
-      "text": "Pour toute question sur nos produits, ou pour nous proposer un projet ou une collaboration, écrivez-nous par e-mail. Nous lirons votre message et vous répondrons.",
+      "text": "Pour toute question sur nos produits, ou pour nous proposer un projet ou une collaboration, écrivez-nous par courriel. Nous lirons votre message et vous répondrons.",
       "general": "Questions, projets et collaborations",
       "support": "Problèmes et utilisation de l’application",
-      "languageNote": "MIRANIMA est gérée par une seule personne, au Japon. Les messages sont lus en japonais et les réponses rédigées à l’aide d’outils de traduction : elles peuvent donc prendre un peu plus de temps et rester assez simples."
+      "languageNote": "MIRANIMA est gérée par une seule personne, au Japon. Vous pouvez nous écrire en français : les messages sont traduits en japonais pour être lus, et les réponses sont rédigées à l’aide d’outils de traduction ; elles peuvent donc prendre un peu plus de temps et rester assez simples."
     },
     "footer": {
       "tradeName": "Nom commercial : MIRANIMA"
@@ -109,6 +110,12 @@
       "title": "Cette page est introuvable.",
       "text": "Il se peut que l’adresse ait changé ou que la page ait été supprimée.",
       "back": "Retour à l’accueil"
+    },
+    "ui": {
+      "menu": "Menu",
+      "close": "Fermer",
+      "language": "Langue",
+      "backToTop": "Haut de page"
     }
   }
 }

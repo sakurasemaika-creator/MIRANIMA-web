@@ -56,7 +56,8 @@
       "lead": "NIARIM 是一款在手机或平板上制作手绘动画的 Android 应用。",
       "body": "在画布上绘画，叠上下一帧，一边播放一边调整动作。从绘画、编辑到音频编辑和视频导出，整个创作流程都能在一个应用里完成。",
       "site": "NIARIM 官方网站",
-      "play": "在 Google Play 查看"
+      "play": "在 Google Play 查看",
+      "storeNote": "NIARIM 目前通过 Google Play 提供。部分国家和地区可能无法使用 Google Play。"
     },
     "flip": {
       "title": "弹跳小球动画",
@@ -82,13 +83,13 @@
     },
     "studio": {
       "reading": "mi·ra·ni·ma",
-      "copy": "MIRANIMA 是我们策划、开发面向创作者的软件时使用的商号。目前，我们主要在开发和运营手绘动画制作应用“NIARIM”。",
+      "copy": "MIRANIMA 是个人经营的商号，为创作者策划、开发软件。目前，我们主要在开发和运营手绘动画制作应用“NIARIM”。",
       "tradeName": "商号",
       "tradeNameValue": "MIRANIMA（ミラニマ）",
       "form": "组织形式",
       "formValue": "个人经营",
       "disclosure": "负责人、地址、电话号码",
-      "disclosureValue": "收到请求后，我们将不迟延地提供上述信息。",
+      "disclosureValue": "收到请求后，我们将及时提供上述信息。",
       "legal": "依据日本《特定商业交易法》的公示信息",
       "legalLink": "NIARIM Premium：依据日本《特定商业交易法》的公示信息",
       "legalNote": "链接页面为 NIARIM Premium 销售条件的相关信息。",
@@ -99,7 +100,7 @@
       "text": "关于产品的疑问、业务往来或合作洽谈，请通过电子邮件联系我们。我们确认内容后会回复您。",
       "general": "咨询、业务往来等",
       "support": "应用故障、使用方法等",
-      "languageNote": "MIRANIMA 由一位身在日本的开发者独自运营。开发者会借助翻译工具，将来信译成日文阅读并回复，因此可能需要稍长一些的时间，内容也可能较为简洁。"
+      "languageNote": "欢迎用中文来信。MIRANIMA 由一位身在日本的开发者独自运营，会借助翻译工具把您的来信译成日文阅读，并以同样的方式回复，因此可能需要稍长一些的时间，内容也可能较为简洁。"
     },
     "footer": {
       "tradeName": "商号：MIRANIMA"
@@ -109,6 +110,12 @@
       "title": "<span class=\"ph\">找不到</span><span class=\"ph\">您要访问的页面。</span>",
       "text": "网址可能已更改，或页面已被删除。",
       "back": "返回首页"
+    },
+    "ui": {
+      "menu": "菜单",
+      "close": "关闭",
+      "language": "语言",
+      "backToTop": "返回顶部"
     }
   }
 }

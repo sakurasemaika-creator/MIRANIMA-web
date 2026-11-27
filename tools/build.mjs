@@ -96,7 +96,7 @@ function flipbook(t) {
   ));
   return [
     '        <div class="fb-stage">',
-    '          <p class="label fb-label">Playback<span>8 fps</span></p>',
+    '          <p class="label fb-label" lang="en">Playback<span>8 fps</span></p>',
     `          <svg class="fb-view" viewBox="0 0 120 90" role="img" aria-labelledby="fb-title">`,
     `            <title id="fb-title">${esc(t.flip.title)}</title>`,
     `            <defs>${defs.join('')}</defs>`,
@@ -107,7 +107,7 @@ function flipbook(t) {
     '          </svg>',
     '        </div>',
     '        <div class="fb-side">',
-    `          <p class="label fb-strip-label">Frames<span><span data-fb-count>${pad(START)}</span> / ${String(n).padStart(2, '0')}</span></p>`,
+    `          <p class="label fb-strip-label"><span lang="en">Frames</span><span><span data-fb-count>${pad(START)}</span> / ${String(n).padStart(2, '0')}</span></p>`,
     `          <ol class="fb-cells" aria-label="${esc(t.flip.frames)}">`,
     ...cells.map((c) => `            ${c}`),
     '          </ol>',
@@ -158,6 +158,7 @@ for (const l of locales) {
     /* Shown on translated pages only (empty in Japanese): who replies and how, and which text prevails. */
     contactNote: l.t.contact.languageNote ? `\n          <p class="contact-note">${esc(l.t.contact.languageNote)}</p>` : '',
     translationNote: l.t.studio.translationNote ? `\n          <p class="facts-note">${l.t.studio.translationNote}</p>` : '',
+    storeNote: l.t.product.storeNote ? `\n          <p class="product-store-note">${esc(l.t.product.storeNote)}</p>` : '',
     langItems: locales.map((target) => (
       `          <li><a href="${relLink(l, target)}" hreflang="${target.lang}" lang="${target.lang}"${target.lang === l.lang ? ' aria-current="page"' : ''}>${esc(target.name)}</a></li>`
     )).join('\n'),

@@ -8,7 +8,7 @@
   "fonts": "family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400&family=Shippori+Mincho:wght@500;600",
   "t": {
     "meta": {
-      "title": "MIRANIMA — No tienes que cambiar tu expresión para adaptarla a tus herramientas.",
+      "title": "MIRANIMA — Tu forma de expresarte no tiene por qué adaptarse a tus herramientas.",
       "description": "MIRANIMA es una marca de software de Japón que diseña herramientas a partir de lo que cada creador quiere expresar. Desarrollamos NIARIM, una app de animación dibujada a mano para Android.",
       "ogDescription": "Herramientas pensadas a partir de lo que quieres expresar. La marca de software creadora de NIARIM, una app de animación dibujada a mano."
     },
@@ -24,11 +24,11 @@
     "nav": {
       "name": "Sobre el nombre",
       "niarim": "Producto",
-      "studio": "Quiénes somos",
+      "studio": "Sobre la actividad",
       "contact": "Contacto"
     },
     "hero": {
-      "title": "No tienes que cambiar tu expresión para adaptarla a tus herramientas.",
+      "title": "Tu forma de expresarte no tiene por qué adaptarse a tus herramientas.",
       "lead": "Qué dibujar y cómo crearlo varía de una persona a otra. En lugar de pedir a quien crea que se adapte a las limitaciones de la herramienta, en MIRANIMA pensamos las herramientas a partir de lo que se quiere expresar.",
       "detail": "Convertimos los «ojalá se pudiera…» que surgen al crear en software que de verdad se puede usar. Nuestro primer producto es <b class=\"latin\">NIARIM</b>, una app de animación dibujada a mano.",
       "ctaNiarim": "Ver NIARIM",
@@ -47,16 +47,17 @@
       "title": "Dos significados en un solo nombre.",
       "figcaption": "El nombre MIRANIMA se puede leer de dos maneras: MIRROR (espejo) + ANIMA, y MIRAI (futuro) + ANIMATION (animación).",
       "m1Title": "Un espejo de lo que lleva dentro quien crea.",
-      "m1Text": "Anima significa «alma» o «vida» en latín. Queremos crear herramientas que funcionen como un espejo y reflejen la sensibilidad de quien crea y las imágenes que tiene en la cabeza, tal y como las concibe. Herramientas que no impongan una forma de expresarse, sino que acojan las ideas de quien las usa.",
+      "m1Text": "Anima significa «alma» o «vida» en latín. Queremos crear herramientas que funcionen como un espejo y reflejen la sensibilidad de quien crea y las imágenes que tiene en la cabeza, tal como las concibe. Herramientas que no impongan una forma de expresarse, sino que acojan las ideas de quien las usa.",
       "m2Title": "Construir juntos la expresión del futuro.",
       "m2Text": "Mirai significa «futuro» en japonés. Animación quiere decir dar movimiento, insuflar vida. Con las herramientas que creamos queremos apoyar a quienes se atreven a explorar nuevas formas de crear y de expresarse. Ese deseo también forma parte del nombre."
     },
     "product": {
       "tagline": "Dibuja fotograma a fotograma y ponlo en movimiento.",
-      "lead": "NIARIM es una app para Android con la que creas animación dibujada a mano en tu móvil o tableta.",
-      "body": "Dibuja en el lienzo, superpón el siguiente fotograma y ajusta el movimiento mientras lo reproduces. Del dibujo y la edición a la edición de audio y la exportación de vídeo, todo el proceso cabe en una sola app.",
-      "site": "Web oficial de NIARIM",
-      "play": "Ver en Google Play"
+      "lead": "NIARIM es una app para Android con la que creas animación dibujada a mano en tu teléfono o tableta.",
+      "body": "Dibuja en el lienzo, superpón el siguiente fotograma y ajusta el movimiento mientras lo reproduces. Del dibujo y la edición a la edición de audio y la exportación de video, todo el proceso cabe en una sola app.",
+      "site": "Sitio oficial de NIARIM",
+      "play": "Ver en Google Play",
+      "storeNote": ""
     },
     "flip": {
       "title": "Animación de una pelota que rebota",
@@ -76,7 +77,7 @@
       "s2Text": "Superpón el fotograma anterior y el siguiente para comprobar cómo encajan los dibujos.",
       "s2Alt": "El papel cebolla de NIARIM, con los fotogramas anterior y siguiente superpuestos",
       "s3Title": "Termina en la línea de tiempo.",
-      "s3Text": "Ordena fotogramas, vídeo y audio para montar la obra completa.",
+      "s3Text": "Ordena fotogramas, video y audio para montar la obra completa.",
       "s3Alt": "La línea de tiempo de NIARIM, con fotogramas y clips ordenados para editar",
       "note": "Capturas de la app real; pueden variar tras las actualizaciones."
     },
@@ -86,7 +87,7 @@
       "tradeName": "Nombre comercial",
       "tradeNameValue": "MIRANIMA (ミラニマ)",
       "form": "Forma jurídica",
-      "formValue": "Empresario individual",
+      "formValue": "Empresa individual (persona física)",
       "disclosure": "Titular, dirección y teléfono",
       "disclosureValue": "Se facilitarán sin demora a quien los solicite.",
       "legal": "Aviso conforme a la Ley de Transacciones Comerciales Específicas (Japón)",
@@ -99,16 +100,22 @@
       "text": "Si tienes preguntas sobre nuestros productos o quieres proponernos un encargo o una colaboración, escríbenos por correo electrónico. Revisaremos tu mensaje y te responderemos.",
       "general": "Consultas y colaboraciones",
       "support": "Problemas y uso de la app",
-      "languageNote": "MIRANIMA lo gestiona una sola persona desde Japón. Los mensajes se leen en japonés y se responden con ayuda de herramientas de traducción, así que las respuestas pueden tardar un poco más y ser bastante sencillas."
+      "languageNote": "MIRANIMA lo gestiona una sola persona desde Japón. Puedes escribirnos en español: los mensajes se traducen al japonés para leerlos y las respuestas se redactan con ayuda de herramientas de traducción, así que pueden tardar un poco más y ser bastante sencillas."
     },
     "footer": {
       "tradeName": "Nombre comercial: MIRANIMA"
     },
     "notFound": {
       "pageTitle": "Página no encontrada",
-      "title": "No hemos encontrado esa página.",
+      "title": "No encontramos esa página.",
       "text": "Es posible que la URL haya cambiado o que la página se haya eliminado.",
       "back": "Volver a la página de inicio"
+    },
+    "ui": {
+      "menu": "Menú",
+      "close": "Cerrar",
+      "language": "Idioma",
+      "backToTop": "Volver arriba"
     }
   }
 }

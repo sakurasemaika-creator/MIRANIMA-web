@@ -8,7 +8,7 @@
   "fonts": "family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400&family=Shippori+Mincho:wght@500;600",
   "t": {
     "meta": {
-      "title": "MIRANIMA — You don’t have to change your expression to fit your tools.",
+      "title": "MIRANIMA — You don’t have to change how you express yourself to fit your tools.",
       "description": "MIRANIMA is a software brand from Japan that designs tools around what creators want to express. We develop NIARIM, a hand-drawn animation app for Android.",
       "ogDescription": "Tools designed around what creators want to express. The software brand behind NIARIM, a hand-drawn animation app."
     },
@@ -24,12 +24,12 @@
     "nav": {
       "name": "About the name",
       "niarim": "Product",
-      "studio": "About us",
+      "studio": "About the business",
       "contact": "Get in touch"
     },
     "hero": {
-      "title": "You don’t have to change your expression to fit your tools.",
-      "lead": "What you want to draw, and how you make it, is different for everyone. Rather than asking creators to work around their tools, MIRANIMA designs tools starting from what they want to express.",
+      "title": "You don’t have to change how you express yourself to fit your tools.",
+      "lead": "What you want to draw and how you make it are different for everyone. Rather than asking creators to work around their tools, MIRANIMA designs tools starting from what they want to express.",
       "detail": "We take the “if only it could…” wishes that come up while creating and turn them into software you can actually use. Our first product is <b class=\"latin\">NIARIM</b>, a hand-drawn animation app.",
       "ctaNiarim": "See NIARIM",
       "ctaName": "About the name"
@@ -38,7 +38,7 @@
       "aria": "A canvas showing the MIRANIMA symbol, drawn symmetrically around a central axis. Anything drawn on it is mirrored onto the opposite side.",
       "fallback": "The MIRANIMA symbol.",
       "hintFine": "Drag to draw. Every line is mirrored onto the other side.",
-      "hintTouch": "Tap “Draw,” then draw with your finger. Every line is mirrored onto the other side.",
+      "hintTouch": "Tap “Draw” and draw with your finger. Every line is mirrored onto the other side.",
       "draw": "Draw",
       "done": "Done",
       "clear": "Clear"
@@ -47,7 +47,7 @@
       "title": "Two meanings in one name.",
       "figcaption": "The name MIRANIMA can be read two ways: MIRROR + ANIMA, and MIRAI + ANIMATION.",
       "m1Title": "A mirror for what’s inside each creator.",
-      "m1Text": "Anima is a word for soul, or life. We want to make tools that work like a mirror, reflecting a creator’s sensibility and the images in their mind exactly as they intend — tools that don’t decide how someone should express themselves, but embrace what they have in mind.",
+      "m1Text": "Anima is Latin for “soul” or “life.” We want to make tools that work like a mirror, reflecting a creator’s sensibility and the images in their mind exactly as they intend — tools that don’t decide how someone should express themselves, but embrace what they have in mind.",
       "m2Title": "Shaping the future of expression, together.",
       "m2Text": "Mirai is the Japanese word for “future.” Animation means giving movement — breathing life into something. Through the tools we make, we want to support people who take on new ways of creating and new forms of expression. That wish is in the name, too."
     },
@@ -56,7 +56,8 @@
       "lead": "NIARIM is an Android app for making hand-drawn animation on your phone or tablet.",
       "body": "Draw on the canvas, lay the next frame over it, and refine the motion as you play it back. From drawing and editing to audio editing and video export, the whole process happens in one app.",
       "site": "NIARIM official site",
-      "play": "View on Google Play"
+      "play": "View on Google Play",
+      "storeNote": ""
     },
     "flip": {
       "title": "A bouncing ball animation",
@@ -99,7 +100,7 @@
       "text": "For questions about our products, business inquiries or collaboration proposals, please contact us by email. We’ll review your message and get back to you.",
       "general": "General and business inquiries",
       "support": "App issues and how-to",
-      "languageNote": "MIRANIMA is run by one developer in Japan. Messages are read in Japanese and answered with the help of translation tools, so replies may take a little longer and be fairly simple."
+      "languageNote": "MIRANIMA is run by one developer in Japan. You’re welcome to write in English: messages are translated into Japanese to be read, and replies are written with the help of translation tools, so they may take a little longer and be fairly simple."
     },
     "footer": {
       "tradeName": "Trade name: MIRANIMA"
@@ -109,6 +110,12 @@
       "title": "We couldn’t find that page.",
       "text": "The URL may have changed, or the page may have been removed.",
       "back": "Back to the home page"
+    },
+    "ui": {
+      "menu": "Menu",
+      "close": "Close",
+      "language": "Language",
+      "backToTop": "Back to top"
     }
   }
 }

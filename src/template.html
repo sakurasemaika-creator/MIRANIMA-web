@@ -69,7 +69,7 @@
       <span class="brand-word">MIRANIMA</span>
     </a>
     <nav class="nav" aria-label="{{t.a11y.mainNav}}">
-      <ul class="nav-list">
+      <ul class="nav-list" lang="en">
         <li><a href="#name" data-nav>Name</a></li>
         <li><a href="#niarim" data-nav>NIARIM</a></li>
         <li><a href="#studio" data-nav>Studio</a></li>
@@ -82,10 +82,10 @@
 {{{langItems}}}
         </ul>
       </details>
-      <a class="nav-cta" href="#contact" data-nav>Contact</a>
+      <a class="nav-cta" href="#contact" data-nav lang="en">Contact</a>
     </nav>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn>
-      <span class="menu-btn-label" data-menu-label>Menu</span>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn data-label-open="{{t.ui.menu}}" data-label-close="{{t.ui.close}}">
+      <span class="menu-btn-label" data-menu-label>{{t.ui.menu}}</span>
       <span class="menu-btn-icon" aria-hidden="true"><i></i><i></i></span>
     </button>
   </div>
@@ -94,14 +94,14 @@
 <div class="menu" id="menu" data-menu hidden>
   <nav class="container menu-inner" aria-label="{{t.a11y.mobileNav}}">
     <ol class="menu-list">
-      <li><a href="#name"><span>01</span>Name<small>{{t.nav.name}}</small></a></li>
-      <li><a href="#niarim"><span>02</span>NIARIM<small>{{t.nav.niarim}}</small></a></li>
-      <li><a href="#studio"><span>03</span>Studio<small>{{t.nav.studio}}</small></a></li>
-      <li><a href="#contact"><span>04</span>Contact<small>{{t.nav.contact}}</small></a></li>
+      <li><a href="#name"><span class="menu-no">01</span><span lang="en">Name</span><small>{{t.nav.name}}</small></a></li>
+      <li><a href="#niarim"><span class="menu-no">02</span><span>NIARIM</span><small>{{t.nav.niarim}}</small></a></li>
+      <li><a href="#studio"><span class="menu-no">03</span><span lang="en">Studio</span><small>{{t.nav.studio}}</small></a></li>
+      <li><a href="#contact"><span class="menu-no">04</span><span lang="en">Contact</span><small>{{t.nav.contact}}</small></a></li>
     </ol>
     <div class="menu-foot">
       <div class="menu-langs">
-        <p class="label">Language</p>
+        <p class="label">{{t.ui.language}}</p>
         <ul class="menu-lang-list">
 {{{langItems}}}
         </ul>
@@ -117,7 +117,7 @@
   <section class="hero" id="top" aria-labelledby="hero-title">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <p class="label hero-label"><span class="label-rule" aria-hidden="true"></span>Independent software brand — Japan</p>
+        <p class="label hero-label" lang="en"><span class="label-rule" aria-hidden="true"></span>Independent software brand — Japan</p>
         <h1 class="hero-title" id="hero-title">{{{t.hero.title}}}</h1>
         <p class="hero-lead">{{t.hero.lead}}</p>
         <p class="hero-detail">{{{t.hero.detail}}}</p>
@@ -147,15 +147,15 @@
           </div>
         </div>
         <figcaption class="mirror-caption">
-          <span class="label" aria-hidden="true">Fig.</span>
+          <span class="label" aria-hidden="true" lang="en">Fig.</span>
           <span data-mirror-hint>{{t.mirror.fallback}}</span>
         </figcaption>
       </figure>
     </div>
 
     <div class="container hero-foot">
-      <p class="label">Tools that follow the maker</p>
-      <p class="label hero-foot-meta">Mirror + Anima<span aria-hidden="true">／</span>Mirai + Animation</p>
+      <p class="label" lang="en">Tools that follow the maker</p>
+      <p class="label hero-foot-meta" lang="en">Mirror + Anima<span aria-hidden="true">／</span>Mirai + Animation</p>
     </div>
   </section>
 
@@ -163,7 +163,7 @@
   <section class="name section" id="name" aria-labelledby="name-title">
     <div class="container">
       <header class="sec-head">
-        <p class="label sec-index"><span>01</span>The name</p>
+        <p class="label sec-index" lang="en"><span>01</span>The name</p>
         <h2 class="sec-title" id="name-title">{{{t.name.title}}}</h2>
       </header>
 
@@ -186,12 +186,12 @@
 
       <div class="meanings">
         <article class="meaning">
-          <p class="label meaning-formula"><span>01</span>Mirror + Anima</p>
+          <p class="label meaning-formula" lang="en"><span>01</span>Mirror + Anima</p>
           <h3 class="meaning-title">{{t.name.m1Title}}</h3>
           <p>{{t.name.m1Text}}</p>
         </article>
         <article class="meaning">
-          <p class="label meaning-formula"><span>02</span>Mirai + Animation</p>
+          <p class="label meaning-formula" lang="en"><span>02</span>Mirai + Animation</p>
           <h3 class="meaning-title">{{t.name.m2Title}}</h3>
           <p>{{t.name.m2Text}}</p>
         </article>
@@ -203,8 +203,8 @@
   <section class="product section" id="niarim" aria-labelledby="niarim-title">
     <div class="container">
       <header class="sec-head sec-head-product">
-        <p class="label sec-index"><span>02</span>First product</p>
-        <p class="label product-platform"><span class="product-dot" aria-hidden="true"></span><span>Android / <span class="nowrap">Hand-drawn animation</span></span></p>
+        <p class="label sec-index" lang="en"><span>02</span>First product</p>
+        <p class="label product-platform" lang="en"><span class="product-dot" aria-hidden="true"></span><span>Android / <span class="nowrap">Hand-drawn animation</span></span></p>
       </header>
 
       <div class="product-intro">
@@ -218,7 +218,7 @@
           <div class="product-actions">
             <a class="btn btn-niarim" href="{{niarimUrl}}" target="_blank" rel="noopener">{{t.product.site}}<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg><span class="visually-hidden">{{t.a11y.newTab}}</span></a>
             <a class="text-link text-link-ext" href="{{playUrl}}" target="_blank" rel="noopener">{{t.product.play}}<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg><span class="visually-hidden">{{t.a11y.newTab}}</span></a>
-          </div>
+          </div>{{{storeNote}}}
         </div>
       </div>
 
@@ -237,7 +237,7 @@
               <figure class="frame-fig">
                 <div class="phone"><img src="{{captureBase}}canvas{{captureSuffix}}.webp" alt="{{t.reel.s1Alt}}" width="640" height="1138" loading="lazy" decoding="async"></div>
                 <figcaption>
-                  <span class="label frame-step">01 — Draw</span>
+                  <span class="label frame-step" lang="en">01 — Draw</span>
                   <strong class="frame-title">{{t.reel.s1Title}}</strong>
                   <span class="frame-text">{{t.reel.s1Text}}</span>
                 </figcaption>
@@ -248,7 +248,7 @@
               <figure class="frame-fig">
                 <div class="phone"><img src="{{captureBase}}onion-skin{{captureSuffix}}.webp" alt="{{t.reel.s2Alt}}" width="640" height="1138" loading="lazy" decoding="async"></div>
                 <figcaption>
-                  <span class="label frame-step">02 — Check motion</span>
+                  <span class="label frame-step" lang="en">02 — Check motion</span>
                   <strong class="frame-title">{{t.reel.s2Title}}</strong>
                   <span class="frame-text">{{t.reel.s2Text}}</span>
                 </figcaption>
@@ -259,7 +259,7 @@
               <figure class="frame-fig">
                 <div class="phone"><img src="{{captureBase}}timeline{{captureSuffix}}.webp" alt="{{t.reel.s3Alt}}" width="640" height="1138" loading="lazy" decoding="async"></div>
                 <figcaption>
-                  <span class="label frame-step">03 — Arrange</span>
+                  <span class="label frame-step" lang="en">03 — Arrange</span>
                   <strong class="frame-title">{{t.reel.s3Title}}</strong>
                   <span class="frame-text">{{t.reel.s3Text}}</span>
                 </figcaption>
@@ -280,7 +280,7 @@
   <section class="studio section" id="studio" aria-labelledby="studio-title">
     <div class="container">
       <header class="sec-head">
-        <p class="label sec-index"><span>03</span>Studio</p>
+        <p class="label sec-index" lang="en"><span>03</span>Studio</p>
       </header>
 
       <div class="studio-grid">
@@ -311,7 +311,7 @@
   <section class="contact section" id="contact" aria-labelledby="contact-title">
     <div class="container">
       <header class="sec-head sec-head-dark">
-        <p class="label sec-index"><span>04</span>Contact</p>
+        <p class="label sec-index" lang="en"><span>04</span>Contact</p>
       </header>
 
       <div class="contact-grid">
@@ -324,11 +324,11 @@
 
       <ul class="mails">
         <li class="mail mail-primary">
-          <p class="label mail-label">General inquiries<span>{{t.contact.general}}</span></p>
+          <p class="label mail-label"><span lang="en">General inquiries</span><span class="mail-sub">{{t.contact.general}}</span></p>
           <div class="mail-target"><a class="mail-address" href="mailto:{{contactEmail}}" data-email="contactEmail"><span data-email-text>{{contactEmail}}</span><svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg></a></div>
         </li>
         <li class="mail">
-          <p class="label mail-label">NIARIM support<span>{{t.contact.support}}</span></p>
+          <p class="label mail-label"><span lang="en">NIARIM support</span><span class="mail-sub">{{t.contact.support}}</span></p>
           <div class="mail-target"><a class="mail-address" href="mailto:{{supportEmail}}" data-email="supportEmail"><span data-email-text>{{supportEmail}}</span><svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg></a></div>
         </li>
       </ul>
@@ -342,8 +342,8 @@
       <span class="brand-tile" aria-hidden="true"><svg><use href="#mark"/></svg></span>
       <span class="brand-word">MIRANIMA</span>
     </a>
-    <p class="footer-motto">Tools that follow the maker.</p>
-    <a class="label footer-top" href="#top">Back to top<svg class="icon" aria-hidden="true"><use href="#arrow-down"/></svg></a>
+    <p class="footer-motto" lang="en">Tools that follow the maker.</p>
+    <a class="label footer-top" href="#top">{{t.ui.backToTop}}<svg class="icon" aria-hidden="true"><use href="#arrow-down"/></svg></a>
     <p class="footer-meta"><span>© <span data-year>{{year}}</span> MIRANIMA</span><span>{{t.footer.tradeName}}</span></p>
   </div>
 </footer>

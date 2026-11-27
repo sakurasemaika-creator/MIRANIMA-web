@@ -405,7 +405,7 @@ h1, h2, h3 { text-wrap: balance; }
   letter-spacing: -.02em;
   line-height: 1.15;
 }
-.menu-list a span {
+.menu-list a .menu-no {
   font-size: var(--fs-label); font-weight: 600; letter-spacing: .14em; color: var(--muted);
 }
 .menu-list a small { font-family: var(--sans); font-size: var(--fs-small); color: var(--muted); letter-spacing: .04em; }

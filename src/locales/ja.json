@@ -56,7 +56,8 @@
       "lead": "NIARIMは、スマートフォンやタブレットで手描きアニメーションを制作するAndroidアプリです。",
       "body": "キャンバスに絵を描き、次のフレームを重ね、再生しながら動きを整える。描画から編集、音声、動画の書き出しまで、作品づくりの流れをひとつのアプリで進められます。",
       "site": "NIARIM公式サイト",
-      "play": "Google Playで見る"
+      "play": "Google Playで見る",
+      "storeNote": ""
     },
     "flip": {
       "title": "ボールが弾むアニメーション",
@@ -109,6 +110,12 @@
       "title": "<span class=\"ph\">お探しのページは</span><span class=\"ph\">見つかりませんでした。</span>",
       "text": "URLが変更されたか、ページが削除された可能性があります。",
       "back": "トップページへ戻る"
+    },
+    "ui": {
+      "menu": "Menu",
+      "close": "Close",
+      "language": "Language",
+      "backToTop": "Back to top"
     }
   }
 }
