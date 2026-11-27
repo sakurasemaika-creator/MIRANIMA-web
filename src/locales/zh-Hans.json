@@ -30,7 +30,7 @@
     "hero": {
       "title": "<span class=\"ph\">不必为了工具，</span><br><span class=\"ph\">改变你的表达。</span>",
       "lead": "想画的东西、创作的方式，每个人都不一样。MIRANIMA 不让创作者去迁就工具，而是从想要表达的东西出发来构思工具。",
-      "detail": "把创作现场发现的“要是能这样就好了”，变成实际可用的软件。我们的第一款产品，是手绘动画制作应用 <b class=\"latin\">NIARIM</b>。",
+      "detail": "把创作时冒出的“要是能这样就好了”，变成实际可用的软件。我们的第一款产品，是手绘动画制作应用 <b class=\"latin\">NIARIM</b>。",
       "ctaNiarim": "了解 NIARIM",
       "ctaName": "名字的由来"
     },
@@ -38,16 +38,16 @@
       "aria": "以中线为轴、左右对称地画出 MIRANIMA 标志的画布。在上面画下的线条，会像镜子一样映到另一侧。",
       "fallback": "MIRANIMA 的标志。",
       "hintFine": "试着拖动来画一画。画下的线条会像镜子一样映到另一侧。",
-      "hintTouch": "点按“用手指画”后，就能用手指作画。画下的线条会像镜子一样映到另一侧。",
+      "hintTouch": "点按“用手指画”后，就能直接作画。画下的线条会像镜子一样映到另一侧。",
       "draw": "用手指画",
       "done": "完成",
       "clear": "全部清除"
     },
     "name": {
       "title": "<span class=\"ph\">名字里的</span><span class=\"ph\">两层含义。</span>",
-      "figcaption": "MIRANIMA 这个名字可以读作两种组合：“MIRROR（镜子）＋ANIMA”与“MIRAI（未来）＋ANIMATION”。",
+      "figcaption": "MIRANIMA 这个名字可以拆解为两种组合：“MIRROR（镜子）＋ANIMA”与“MIRAI（未来）＋ANIMATION”。",
       "m1Title": "映照创作者内心的镜子。",
-      "m1Text": "Anima 意为灵魂与生命。我们想做出像镜子一样的工具，把创作者的感性与脑海中的画面如实映照出来。我们希望它不替使用者决定表达方式，而是接纳他们的想法。",
+      "m1Text": "Anima 意为灵魂与生命。我们想做出像镜子一样的工具，把创作者的感性与脑海中的画面，按照他们的心意映照出来。我们希望它不替使用者决定表达方式，而是接纳他们的想法。",
       "m2Title": "一起创造未来的表达。",
       "m2Text": "Mirai 是日语的“未来”。Animation 则有赋予动作、注入生命的意思。我们希望通过打造工具，支持那些挑战新创作方式与新表达的人。这份心愿，也寄托在这个名字里。"
     },
@@ -82,16 +82,16 @@
     },
     "studio": {
       "reading": "mi·ra·ni·ma",
-      "copy": "MIRANIMA 是我们策划、开发面向创作者的软件时使用的商号。目前以手绘动画制作应用“NIARIM”为中心进行开发与运营。",
+      "copy": "MIRANIMA 是我们策划、开发面向创作者的软件时使用的商号。目前，我们主要在开发和运营手绘动画制作应用“NIARIM”。",
       "tradeName": "商号",
       "tradeNameValue": "MIRANIMA（ミラニマ）",
-      "form": "经营类型",
+      "form": "组织形式",
       "formValue": "个人经营",
       "disclosure": "负责人、地址、电话号码",
-      "disclosureValue": "收到请求后，我们将毫不延迟地提供。",
-      "legal": "依据日本特定商业交易法的标示",
-      "legalLink": "NIARIM Premium：依据日本特定商业交易法的标示",
-      "legalNote": "链接页面为 NIARIM Premium 销售条件的相关标示。"
+      "disclosureValue": "收到请求后，我们将不迟延地提供上述信息。",
+      "legal": "依据日本《特定商业交易法》的公示信息",
+      "legalLink": "NIARIM Premium：依据日本《特定商业交易法》的公示信息",
+      "legalNote": "链接页面为 NIARIM Premium 销售条件的相关信息。"
     },
     "contact": {
       "title": "联系我们",

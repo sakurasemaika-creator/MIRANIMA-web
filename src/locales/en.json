@@ -38,7 +38,7 @@
       "aria": "A canvas showing the MIRANIMA symbol, drawn symmetrically around a central axis. Anything drawn on it is mirrored onto the opposite side.",
       "fallback": "The MIRANIMA symbol.",
       "hintFine": "Drag to draw. Every line is mirrored onto the other side.",
-      "hintTouch": "Tap “Draw”, then draw with your finger. Every line is mirrored onto the other side.",
+      "hintTouch": "Tap “Draw,” then draw with your finger. Every line is mirrored onto the other side.",
       "draw": "Draw",
       "done": "Done",
       "clear": "Clear"
@@ -49,7 +49,7 @@
       "m1Title": "A mirror for what’s inside each creator.",
       "m1Text": "Anima is a word for soul, or life. We want to make tools that work like a mirror, reflecting a creator’s sensibility and the images in their mind exactly as they intend — tools that don’t decide how someone should express themselves, but embrace what they have in mind.",
       "m2Title": "Shaping the future of expression, together.",
-      "m2Text": "Mirai is the Japanese word for “future”. Animation means giving movement — breathing life into something. Through the tools we make, we want to support people who take on new ways of creating and new forms of expression. That wish is in the name, too."
+      "m2Text": "Mirai is the Japanese word for “future.” Animation means giving movement — breathing life into something. Through the tools we make, we want to support people who take on new ways of creating and new forms of expression. That wish is in the name, too."
     },
     "product": {
       "tagline": "Draw one frame at a time, and set it in motion.",
@@ -89,8 +89,8 @@
       "formValue": "Sole proprietorship",
       "disclosure": "Owner, address and phone number",
       "disclosureValue": "Disclosed without delay upon request.",
-      "legal": "Japan’s Specified Commercial Transactions Act",
-      "legalLink": "NIARIM Premium: Notice under Japan’s Specified Commercial Transactions Act",
+      "legal": "Notice under the Act on Specified Commercial Transactions (Japan)",
+      "legalLink": "NIARIM Premium: Notice under the Act on Specified Commercial Transactions",
       "legalNote": "The linked page covers the terms of sale for NIARIM Premium."
     },
     "contact": {
