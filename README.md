@@ -26,6 +26,8 @@ MIRANIMAのブランドサイトです。静的HTML / CSS / JavaScriptで構成�
 ## Project files
 
 - index.html — ページ構造・日本語コピー（共通SVGシンボル、OGP、構造化データを含む）
+- 404.html — 存在しないURL用のページ（Cloudflare Pagesが正しく404を返すために必要）
+- _headers — Cloudflare Pages用のキャッシュ・セキュリティヘッダー
 - styles/core.css — デザイントークン、タイポグラフィ、ヘッダー、モバイルメニュー、フッター
 - styles/home.css — Hero / Name / NIARIM / Studio / Contact の各セクションとレスポンシブ
 - script.js — 連絡先・リンク設定の反映、モバイルメニュー、現在地ナビ、NIARIMリールの位置表示
