@@ -1,5 +1,0 @@
-/* MIRANIMA stylesheet entry point. Keep imports in cascade order. */
-@import url("styles/core.css");
-@import url("styles/components.css");
-@import url("styles/responsive.css");
-@import url("styles/studio.css");

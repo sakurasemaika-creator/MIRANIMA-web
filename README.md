@@ -25,16 +25,15 @@ MIRANIMAのブランドサイトです。静的HTML / CSS / JavaScriptで構成�
 
 ## Project files
 
-- index.html — ページ構造・日本語コピー
-- styles.css — CSS entry point
-- styles/core.css — typography, header, hero and base layout
-- styles/components.css — brand name origins and NIARIM product gallery
-- styles/studio.css — business information, contact and footer
-- styles/responsive.css — tablet / smartphone layouts
-- script.js — mobile navigation, contact and product links
+- index.html — ページ構造・日本語コピー（共通SVGシンボル、OGP、構造化データを含む）
+- styles/core.css — デザイントークン、タイポグラフィ、ヘッダー、モバイルメニュー、フッター
+- styles/home.css — Hero / Name / NIARIM / Studio / Contact の各セクションとレスポンシブ
+- script.js — 連絡先・リンク設定の反映、モバイルメニュー、現在地ナビ、NIARIMリールの位置表示
+- mirror.js — Heroの鏡キャンバス（描いた線を中央軸で左右に映す）
 - site.config.js — official email addresses and URLs
-- assets/mark.svg — MIRANIMA symbol
-- assets/og-image.svg — social share image
+- assets/mark.svg — MIRANIMA symbol（ライム、暗い背景用）
+- assets/favicon.svg / assets/apple-touch-icon.png — アイコン（インクの面にライムのシンボル）
+- assets/og-image.png — SNS共有画像（1200×630）
 - DESIGN_BRIEF.md — design rationale and content accuracy rules
 
 ## Git workflow
@@ -55,4 +54,4 @@ MIRANIMAのブランドサイトです。静的HTML / CSS / JavaScriptで構成�
 1. Copy, product status, legal information and outbound links match the latest details.
 2. miranima-studio.com DNS points to the hosting provider and HTTPS is enabled.
 3. The NIARIM official-site screenshot URLs remain available. If they change, update the corresponding image paths and verify all three images on desktop and mobile.
-4. Review page rendering at desktop, tablet and smartphone widths, keyboard navigation, image alternatives and reduced-motion settings.
+4. Review page rendering at desktop, tablet and smartphone widths (320px以上), keyboard navigation, image alternatives and reduced-motion settings.

@@ -2,228 +2,327 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f3ed">
-  <meta name="description" content="MIRANIMAは、つくる人の表現から道具を考えるソフトウェアブランドです。手描きアニメーション制作アプリ NIARIM を開発・提供しています。">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="MIRANIMA — 道具に合わせて、表現を変えなくていい。">
-  <meta property="og:description" content="つくる人の表現から、道具を考える。">
-  <meta property="og:image" content="https://miranima-studio.com/assets/og-image.svg">
-  <meta property="og:url" content="https://miranima-studio.com/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>MIRANIMA — 道具に合わせて、表現を変えなくていい。</title>
+  <meta name="description" content="MIRANIMA（ミラニマ）は、つくる人の表現から道具を考えるソフトウェアブランドです。Android向け手描きアニメーション制作アプリ NIARIM を開発・提供しています。">
+  <meta name="theme-color" content="#f5f3ed">
+  <meta name="color-scheme" content="light">
   <link rel="canonical" href="https://miranima-studio.com/">
-  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MIRANIMA">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="MIRANIMA — 道具に合わせて、表現を変えなくていい。">
+  <meta property="og:description" content="つくる人の表現から、道具を考える。手描きアニメーション制作アプリ NIARIM を開発するソフトウェアブランド。">
+  <meta property="og:url" content="https://miranima-studio.com/">
+  <meta property="og:image" content="https://miranima-studio.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MIRANIMA — 道具に合わせて、表現を変えなくていい。">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://niarim.miranima-studio.com">
+  <!-- Web fonts load without blocking first paint; system Japanese fonts show until they arrive. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap"></noscript>
+  <link rel="stylesheet" href="styles/core.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <script>document.documentElement.classList.add('js');</script>
   <script src="site.config.js" defer></script>
   <script src="script.js" defer></script>
+  <script src="mirror.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MIRANIMA",
+    "alternateName": "ミラニマ",
+    "url": "https://miranima-studio.com/",
+    "logo": "https://miranima-studio.com/assets/apple-touch-icon.png",
+    "email": "contact@miranima-studio.com",
+    "brand": { "@type": "Brand", "name": "NIARIM", "url": "https://niarim.miranima-studio.com/" }
+  }
+  </script>
 </head>
 <body>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="mark" viewBox="86 107 328 289">
+    <g fill="none" stroke="currentColor" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M99 383V126l65 103v154H99"/>
+      <path d="M401 383V126l-63 103v154h63"/>
+      <path d="M164 229l86 111 88-111"/>
+      <path d="M174 120h156l-78 132z"/>
+    </g>
+  </symbol>
+  <symbol id="arrow-ne" viewBox="0 0 16 16"><path d="M4.5 11.5l7-7M5.5 4.5h6v6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></symbol>
+  <symbol id="arrow-down" viewBox="0 0 16 16"><path d="M8 2.5v11M3.5 9l4.5 4.5L12.5 9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></symbol>
+  <symbol id="arrow-right" viewBox="0 0 16 16"><path d="M2.5 8h11M9 3.5L13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></symbol>
+</svg>
+
 <a class="skip-link" href="#main">本文へスキップ</a>
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="#top" aria-label="MIRANIMA ホーム">
-      <img src="assets/mark.svg" alt="" width="34" height="34">
-      <span>MIRANIMA</span>
+
+<header class="site-header" data-header>
+  <div class="container header-bar">
+    <a class="brand" href="#top" aria-label="MIRANIMA ページの先頭へ">
+      <span class="brand-tile" aria-hidden="true"><svg><use href="#mark"/></svg></span>
+      <span class="brand-word">MIRANIMA</span>
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="メニューを開く">
-      <span></span><span></span>
-    </button>
-    <nav class="primary-nav" id="primary-nav" aria-label="メインナビゲーション">
-      <a href="#origins">NAME</a>
-      <a href="#products">NIARIM</a>
-      <a href="#studio-info">STUDIO</a>
-      <a class="nav-contact" href="#contact">CONTACT <span aria-hidden="true">↗</span></a>
+    <nav class="nav" aria-label="メインナビゲーション">
+      <ul class="nav-list">
+        <li><a href="#name" data-nav>Name</a></li>
+        <li><a href="#niarim" data-nav>NIARIM</a></li>
+        <li><a href="#studio" data-nav>Studio</a></li>
+      </ul>
+      <a class="nav-cta" href="#contact" data-nav>Contact</a>
     </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn>
+      <span class="menu-btn-label" data-menu-label>Menu</span>
+      <span class="menu-btn-icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
   </div>
 </header>
 
+<div class="menu" id="menu" data-menu hidden>
+  <nav class="container menu-inner" aria-label="モバイルナビゲーション">
+    <ol class="menu-list">
+      <li><a href="#name"><span>01</span>Name<small>名前について</small></a></li>
+      <li><a href="#niarim"><span>02</span>NIARIM<small>プロダクト</small></a></li>
+      <li><a href="#studio"><span>03</span>Studio<small>事業について</small></a></li>
+      <li><a href="#contact"><span>04</span>Contact<small>お問い合わせ</small></a></li>
+    </ol>
+    <p class="menu-foot"><a href="mailto:contact@miranima-studio.com" data-email="contactEmail">contact@miranima-studio.com</a></p>
+  </nav>
+</div>
+
 <main id="main">
+
+  <!-- Hero -->
   <section class="hero" id="top" aria-labelledby="hero-title">
-    <div class="wrap hero-main">
+    <div class="container hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-rule"></span> INDEPENDENT SOFTWARE BRAND</p>
-        <h1 id="hero-title">道具に合わせて、<br>表現を変えなくていい。</h1>
+        <p class="label hero-label"><span class="label-rule" aria-hidden="true"></span>Independent software brand — Japan</p>
+        <h1 class="hero-title" id="hero-title"><span class="ph">道具に</span><span class="ph">合わせて、</span><br><span class="ph">表現を</span><span class="ph">変えなくていい。</span></h1>
         <p class="hero-lead">描きたいものも、作り方も、人によって違います。MIRANIMAは、つくる人が道具の都合に合わせるのではなく、表現したいことから道具を考えます。</p>
-        <p class="hero-detail">制作の現場で見つけた「こうできたら」を、実際に使えるソフトウェアに。最初のプロダクトとして、手描きアニメーション制作アプリ <span>NIARIM</span> を開発・提供しています。</p>
-        <div class="hero-links">
-          <a class="link-arrow" href="#products">NIARIMを見る <span aria-hidden="true">↘</span></a>
-          <a class="quiet-link" href="#origins">MIRANIMAという名前 <span aria-hidden="true">↓</span></a>
+        <p class="hero-detail">制作の現場で見つけた「こうできたら」を、実際に使えるソフトウェアに。最初のプロダクトとして、手描きアニメーション制作アプリ <b class="latin">NIARIM</b> を開発・提供しています。</p>
+        <div class="hero-actions">
+          <a class="btn btn-ink" href="#niarim">NIARIMを見る<svg class="icon" aria-hidden="true"><use href="#arrow-down"/></svg></a>
+          <a class="text-link" href="#name">MIRANIMAという名前</a>
         </div>
       </div>
 
-      <div class="brand-stage" role="img" aria-label="MIRANIMAのシンボルマークを鏡の枠に重ねたビジュアル">
-        <div class="stage-frame stage-frame-back"></div>
-        <div class="stage-frame stage-frame-front">
-          <span class="stage-corner stage-corner-tl"></span>
-          <span class="stage-corner stage-corner-br"></span>
-          <img src="assets/mark.svg" alt="" width="156" height="142">
-          <span class="stage-glint" aria-hidden="true"></span>
+      <figure class="mirror-figure">
+        <div class="mirror" data-mirror>
+          <div class="mirror-frame" aria-hidden="true"></div>
+          <div class="mirror-surface">
+            <img class="mirror-fallback" src="assets/mark.svg" alt="" width="180" height="165">
+            <canvas class="mirror-canvas" role="img" aria-label="MIRANIMAのシンボルを、中央の線を軸に左右対称に描いたキャンバス。描いた線は、反対側に鏡のように映ります。"></canvas>
+            <span class="mirror-axis" aria-hidden="true"></span>
+            <p class="mirror-tag mirror-tag-l" aria-hidden="true">MIRROR</p>
+            <p class="mirror-tag mirror-tag-r" aria-hidden="true">ANIMA</p>
+            <div class="mirror-buttons">
+              <button class="mirror-btn" type="button" data-mirror-draw hidden aria-pressed="false">指で描く</button>
+              <button class="mirror-btn" type="button" data-mirror-clear hidden>消す</button>
+            </div>
+          </div>
         </div>
-        <p class="stage-note stage-note-top">MIRROR / ANIMA</p>
-        <p class="stage-note stage-note-bottom">MIRAI / ANIMATION</p>
-        <span class="stage-index">M — 01</span>
-      </div>
+        <figcaption class="mirror-caption">
+          <span class="label" aria-hidden="true">Fig.</span>
+          <span data-mirror-hint>MIRANIMAのシンボルマーク。</span>
+        </figcaption>
+      </figure>
     </div>
-    <div class="wrap hero-foot">
-      <span>TOOLS THAT FOLLOW THE MAKER</span>
-      <span>JAPAN <i></i> SOFTWARE DEVELOPMENT</span>
+
+    <div class="container hero-foot">
+      <p class="label">Tools that follow the maker</p>
+      <p class="label hero-foot-meta">Mirror + Anima<span aria-hidden="true">／</span>Mirai + Animation</p>
     </div>
   </section>
 
-  <section class="origins" id="origins" aria-labelledby="origins-title">
-    <div class="wrap">
-      <div class="section-topline">
-        <p class="section-index">01 / THE NAME</p>
-        <p class="section-aside">名前に込めた、ふたつの意味。</p>
-      </div>
-      <h2 class="section-title" id="origins-title">MIRANIMAという名前。</h2>
-      <div class="origin-list">
-        <article class="origin-item">
-          <p class="origin-number">01</p>
-          <div class="origin-main">
-            <h3><span>MIRROR</span><b>+</b><span>ANIMA</span></h3>
-            <p class="origin-jp">つくる人の内側を映す鏡。</p>
+  <!-- 01 Name -->
+  <section class="name section" id="name" aria-labelledby="name-title">
+    <div class="container">
+      <header class="sec-head">
+        <p class="label sec-index"><span>01</span>The name</p>
+        <h2 class="sec-title" id="name-title"><span class="ph">名前に込めた、</span><span class="ph">ふたつの意味。</span></h2>
+      </header>
+
+      <figure class="name-figure">
+        <div class="name-diagram" aria-hidden="true">
+          <div class="nd-side nd-l">
+            <p class="nd-cap nd-top"><b>MIR</b>ROR</p>
+            <p class="nd-word">MIR</p>
+            <p class="nd-cap nd-bottom"><b>MIR</b>AI</p>
           </div>
-          <p class="origin-description">Animaは、魂や生命を意味する言葉。クリエイターの感性や頭の中にあるイメージを、意のままに映し出せる鏡のような道具をつくりたい。使う人の表現を決めつけず、その人の考えを受け止める存在を目指しています。</p>
+          <div class="nd-side nd-r">
+            <p class="nd-cap nd-top"><b>ANIMA</b></p>
+            <p class="nd-word">ANIMA</p>
+            <p class="nd-cap nd-bottom"><b>ANIMA</b>TION</p>
+          </div>
+          <span class="nd-seam"></span>
+        </div>
+        <figcaption class="visually-hidden">MIRANIMAという名前は、「MIRROR＋ANIMA」と「MIRAI＋ANIMATION」のふたつの組み合わせとして読めます。</figcaption>
+      </figure>
+
+      <div class="meanings">
+        <article class="meaning">
+          <p class="label meaning-formula"><span>01</span>Mirror + Anima</p>
+          <h3 class="meaning-title">つくる人の内側を映す鏡。</h3>
+          <p>Animaは、魂や生命を意味する言葉。クリエイターの感性や頭の中にあるイメージを、意のままに映し出せる鏡のような道具をつくりたい。使う人の表現を決めつけず、その人の考えを受け止める存在を目指しています。</p>
         </article>
-        <article class="origin-item">
-          <p class="origin-number">02</p>
-          <div class="origin-main">
-            <h3><span>MIRAI</span><b>+</b><span>ANIMATION</span></h3>
-            <p class="origin-jp">これからの表現を、ともにつくる。</p>
-          </div>
-          <p class="origin-description">Miraiは日本語の「未来」。Animationには、動きを与えること、命を吹き込むことという意味があります。新しい作り方や表現に挑戦する人を、道具づくりを通じて支えていきたい。その願いも、この名前に込めました。</p>
+        <article class="meaning">
+          <p class="label meaning-formula"><span>02</span>Mirai + Animation</p>
+          <h3 class="meaning-title">これからの表現を、ともにつくる。</h3>
+          <p>Miraiは日本語の「未来」。Animationには、動きを与えること、命を吹き込むことという意味があります。新しい作り方や表現に挑戦する人を、道具づくりを通じて支えていきたい。その願いも、この名前に込めました。</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="products" id="products" aria-labelledby="products-title">
-    <div class="wrap">
-      <div class="section-topline">
-        <p class="section-index">02 / FIRST PRODUCT</p>
-        <p class="section-aside">MIRANIMAが開発するプロダクト。</p>
-      </div>
+  <!-- 02 NIARIM -->
+  <section class="product section" id="niarim" aria-labelledby="niarim-title">
+    <div class="container">
+      <header class="sec-head sec-head-product">
+        <p class="label sec-index"><span>02</span>First product</p>
+        <p class="label product-platform"><span class="product-dot" aria-hidden="true"></span><span>Android / <span class="nowrap">Hand-drawn animation</span></span></p>
+      </header>
+
       <div class="product-intro">
-        <div class="product-heading">
-          <p class="product-kicker"><span></span> ANDROID / HAND-DRAWN ANIMATION</p>
-          <h2 id="products-title">NIARIM</h2>
-          <p class="product-jp">一枚ずつ描いて、動きにする。</p>
+        <div class="product-id">
+          <h2 class="product-name" id="niarim-title">NIARIM</h2>
+          <p class="product-tagline">一枚ずつ描いて、動きにする。</p>
         </div>
-        <div class="product-description">
-          <p>NIARIMは、スマートフォンやタブレットで手描きアニメーションを制作するAndroidアプリです。</p>
+        <div class="product-body">
+          <p class="product-lead">NIARIMは、スマートフォンやタブレットで手描きアニメーションを制作するAndroidアプリです。</p>
           <p>キャンバスに絵を描き、次のフレームを重ね、再生しながら動きを整える。描画から編集、音声、動画の書き出しまで、作品づくりの流れをひとつのアプリで進められます。</p>
           <div class="product-actions">
-            <a class="product-primary" id="niarim-link" href="https://niarim.miranima-studio.com/" target="_blank" rel="noopener noreferrer">NIARIM公式サイト <span aria-hidden="true">↗</span></a>
-            <a class="product-secondary" href="https://play.google.com/store/apps/details?id=com.niarim.niarim" target="_blank" rel="noopener noreferrer">Google Play <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-niarim" href="https://niarim.miranima-studio.com/" data-link="niarimUrl" target="_blank" rel="noopener">NIARIM公式サイト<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg><span class="visually-hidden">（新しいタブで開きます）</span></a>
+            <a class="text-link text-link-ext" href="https://play.google.com/store/apps/details?id=com.niarim.niarim" target="_blank" rel="noopener">Google Playで見る<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg><span class="visually-hidden">（新しいタブで開きます）</span></a>
           </div>
         </div>
       </div>
 
-      <div class="product-gallery" aria-label="NIARIMの実際のアプリ画面">
-        <figure class="product-screen">
-          <div class="screen-image">
-            <img src="https://niarim.miranima-studio.com/assets/images/app-captures/layers.webp" alt="NIARIMのレイヤー管理を表示した実際のアプリ画面" width="320" height="569" loading="lazy" decoding="async">
-          </div>
-          <figcaption>
-            <span class="screen-no">01 / DRAW</span>
-            <strong>一枚ずつ描く。</strong>
-            <span>ブラシやレイヤーを使い、絵を描き重ねていく。</span>
-          </figcaption>
-        </figure>
-        <figure class="product-screen">
-          <div class="screen-image">
-            <img src="https://niarim.miranima-studio.com/assets/images/app-captures/onion-skin.webp" alt="前後のフレームを重ねて確認するNIARIMのオニオンスキン画面" width="320" height="569" loading="lazy" decoding="async">
-          </div>
-          <figcaption>
-            <span class="screen-no">02 / CHECK MOTION</span>
-            <strong>動きを見比べる。</strong>
-            <span>前後のフレームを重ねて、絵のつながりを確かめる。</span>
-          </figcaption>
-        </figure>
-        <figure class="product-screen">
-          <div class="screen-image">
-            <img src="https://niarim.miranima-studio.com/assets/images/app-captures/timeline.webp" alt="フレームやクリップを並べて編集するNIARIMのタイムライン画面" width="320" height="569" loading="lazy" decoding="async">
-          </div>
-          <figcaption>
-            <span class="screen-no">03 / ARRANGE</span>
-            <strong>タイムラインで仕上げる。</strong>
-            <span>フレームや映像、音声を並べ、作品全体を組み立てる。</span>
-          </figcaption>
-        </figure>
+      <div class="reel" data-reel>
+        <div class="reel-scroller" tabindex="0" role="region" aria-label="NIARIMで作品をつくる流れ（実際のアプリ画面）" data-reel-scroller>
+          <ol class="reel-track">
+            <li class="frame">
+              <p class="frame-no" aria-hidden="true">F.01</p>
+              <figure class="frame-fig">
+                <div class="phone"><img src="https://niarim.miranima-studio.com/assets/images/app-captures/layers.webp" alt="NIARIMのレイヤー管理を表示した実際のアプリ画面" width="640" height="1138" loading="lazy" decoding="async"></div>
+                <figcaption>
+                  <span class="label frame-step">01 — Draw</span>
+                  <strong class="frame-title">一枚ずつ描く。</strong>
+                  <span class="frame-text">ブラシやレイヤーを使い、絵を描き重ねていく。</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="frame">
+              <p class="frame-no" aria-hidden="true">F.02</p>
+              <figure class="frame-fig">
+                <div class="phone"><img src="https://niarim.miranima-studio.com/assets/images/app-captures/onion-skin.webp" alt="前後のフレームを重ねて確認するNIARIMのオニオンスキン画面" width="640" height="1138" loading="lazy" decoding="async"></div>
+                <figcaption>
+                  <span class="label frame-step">02 — Check motion</span>
+                  <strong class="frame-title">動きを見比べる。</strong>
+                  <span class="frame-text">前後のフレームを重ねて、絵のつながりを確かめる。</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="frame">
+              <p class="frame-no" aria-hidden="true">F.03</p>
+              <figure class="frame-fig">
+                <div class="phone"><img src="https://niarim.miranima-studio.com/assets/images/app-captures/timeline.webp" alt="フレームやクリップを並べて編集するNIARIMのタイムライン画面" width="640" height="1138" loading="lazy" decoding="async"></div>
+                <figcaption>
+                  <span class="label frame-step">03 — Arrange</span>
+                  <strong class="frame-title">タイムラインで仕上げる。</strong>
+                  <span class="frame-text">フレームや映像、音声を並べ、作品全体を組み立てる。</span>
+                </figcaption>
+              </figure>
+            </li>
+          </ol>
+        </div>
+        <div class="reel-controls" data-reel-controls hidden>
+          <p class="label reel-count" aria-hidden="true"><span data-reel-current>01</span> / 03</p>
+          <div class="reel-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
       </div>
-      <p class="product-gallery-note">掲載画面はNIARIMの実際のアプリ画面です。アップデートにより表示が変わる場合があります。</p>
+      <p class="product-note">掲載画面はNIARIMの実際のアプリ画面です。アップデートにより表示が変わる場合があります。</p>
     </div>
   </section>
 
-  <section class="studio-info" id="studio-info" aria-labelledby="studio-title">
-    <div class="wrap">
-      <div class="section-topline">
-        <p class="section-index">03 / STUDIO</p>
-        <p class="section-aside">事業・お問い合わせについて。</p>
-      </div>
+  <!-- 03 Studio -->
+  <section class="studio section" id="studio" aria-labelledby="studio-title">
+    <div class="container">
+      <header class="sec-head">
+        <p class="label sec-index"><span>03</span>Studio</p>
+      </header>
+
       <div class="studio-grid">
         <div class="studio-intro">
-          <h2 id="studio-title">MIRANIMA</h2>
-          <p class="studio-reading">ミラニマ</p>
+          <h2 class="studio-name" id="studio-title">MIRANIMA<span class="studio-reading">ミラニマ</span></h2>
           <p class="studio-copy">クリエイター向けソフトウェアを企画・開発する屋号です。現在は、手描きアニメーション制作アプリ「NIARIM」を中心に開発・運営しています。</p>
-          <a class="legal-link" href="https://niarim.miranima-studio.com/tokushoho/" target="_blank" rel="noopener noreferrer">NIARIM Premiumの特定商取引法に基づく表記 <span aria-hidden="true">↗</span></a>
-          <small>※リンク先はNIARIM Premiumの販売条件に関する表示です。</small>
         </div>
-        <div class="studio-details">
-          <dl class="studio-facts">
-            <div><dt>屋号</dt><dd>MIRANIMA（ミラニマ）</dd></div>
-            <div><dt>事業形態</dt><dd>個人事業</dd></div>
-            <div><dt>代表者</dt><dd>ご請求があった場合は、遅滞なく開示いたします。</dd></div>
-            <div><dt>所在地</dt><dd>ご請求があった場合は、遅滞なく開示いたします。</dd></div>
-            <div><dt>電話番号</dt><dd>ご請求があった場合は、遅滞なく開示いたします。</dd></div>
+
+        <div class="studio-body">
+          <dl class="facts">
+            <div class="fact"><dt>屋号</dt><dd>MIRANIMA（ミラニマ）</dd></div>
+            <div class="fact"><dt>事業形態</dt><dd>個人事業</dd></div>
+            <div class="fact"><dt>代表者・所在地・電話番号</dt><dd>ご請求があった場合は、遅滞なく開示いたします。</dd></div>
+            <div class="fact">
+              <dt>特定商取引法に基づく表記</dt>
+              <dd>
+                <a class="fact-link" href="https://niarim.miranima-studio.com/tokushoho/" data-link="niarimLegalUrl" target="_blank" rel="noopener">NIARIM Premiumの特定商取引法に<span class="nowrap">基づく表記<svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg></span><span class="visually-hidden">（新しいタブで開きます）</span></a>
+                <small>リンク先はNIARIM Premiumの販売条件に関する表示です。</small>
+              </dd>
+            </div>
           </dl>
-          <div class="studio-emails">
-            <div>
-              <span class="email-label">GENERAL INQUIRIES</span>
-              <a href="mailto:contact@miranima-studio.com">contact@miranima-studio.com</a>
-              <small>ご相談・お取引など</small>
-            </div>
-            <div>
-              <span class="email-label">NIARIM SUPPORT</span>
-              <a href="mailto:support@miranima-studio.com">support@miranima-studio.com</a>
-              <small>アプリの不具合・使い方など</small>
-            </div>
-          </div>
-          <p class="studio-note">代表者名・所在地・電話番号は、お問い合わせをいただいた際に遅滞なく開示いたします。</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="contact" id="contact" aria-labelledby="contact-title">
-    <div class="wrap contact-inner">
-      <div>
-        <p class="section-index">04 / CONTACT</p>
-        <h2 id="contact-title">お問い合わせ</h2>
+  <!-- 04 Contact -->
+  <section class="contact section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <header class="sec-head sec-head-dark">
+        <p class="label sec-index"><span>04</span>Contact</p>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-intro">
+          <h2 class="contact-title" id="contact-title">お問い合わせ</h2>
+          <p>プロダクトについてのご質問、お取引や協業のご相談などは、メールでご連絡ください。内容を確認のうえ、返信いたします。</p>
+        </div>
+        <svg class="contact-mark" aria-hidden="true"><use href="#mark"/></svg>
       </div>
-      <div class="contact-main">
-        <p>プロダクトについてのご質問、お取引や協業のご相談などは、メールでご連絡ください。</p>
-        <a class="contact-link" id="contact-link" href="mailto:contact@miranima-studio.com">
-          <span id="contact-label">contact@miranima-studio.com</span><span aria-hidden="true">↗</span>
-        </a>
-        <p class="contact-hint" id="contact-hint">内容を確認のうえ、返信いたします。</p>
-        <p class="contact-support">NIARIMのサポート窓口：<a href="mailto:support@miranima-studio.com">support@miranima-studio.com</a></p>
-      </div>
-      <div class="contact-mark" aria-hidden="true"><img src="assets/mark.svg" alt="" width="72" height="66"></div>
+
+      <ul class="mails">
+        <li class="mail mail-primary">
+          <p class="label mail-label">General inquiries<span>ご相談・お取引など</span></p>
+          <div class="mail-target"><a class="mail-address" href="mailto:contact@miranima-studio.com" data-email="contactEmail"><span data-email-text>contact@miranima-studio.com</span><svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg></a></div>
+        </li>
+        <li class="mail">
+          <p class="label mail-label">NIARIM support<span>アプリの不具合・使い方など</span></p>
+          <div class="mail-target"><a class="mail-address" href="mailto:support@miranima-studio.com" data-email="supportEmail"><span data-email-text>support@miranima-studio.com</span><svg class="icon" aria-hidden="true"><use href="#arrow-ne"/></svg></a></div>
+        </li>
+      </ul>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <div class="wrap footer-main">
-    <a class="brand footer-brand" href="#top"><img src="assets/mark.svg" alt="" width="30" height="30"><span>MIRANIMA</span></a>
-    <p>Tools that follow the maker.</p>
-    <a class="back-top" href="#top">BACK TO TOP ↑</a>
-  </div>
-  <div class="wrap footer-bottom">
-    <span>© <span id="year">2026</span> MIRANIMA. ALL RIGHTS RESERVED.</span>
-    <span>屋号：MIRANIMA（ミラニマ）</span>
+  <div class="container footer-grid">
+    <a class="brand brand-on-ink" href="#top" aria-label="MIRANIMA ページの先頭へ">
+      <span class="brand-tile" aria-hidden="true"><svg><use href="#mark"/></svg></span>
+      <span class="brand-word">MIRANIMA</span>
+    </a>
+    <p class="footer-motto">Tools that follow the maker.</p>
+    <a class="label footer-top" href="#top">Back to top<svg class="icon" aria-hidden="true"><use href="#arrow-down"/></svg></a>
+    <p class="footer-meta"><span>© <span data-year>2026</span> MIRANIMA</span><span>屋号：MIRANIMA（ミラニマ）</span></p>
   </div>
 </footer>
 </body>

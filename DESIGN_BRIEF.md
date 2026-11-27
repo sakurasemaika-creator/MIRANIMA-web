@@ -16,6 +16,9 @@ The visual language is restrained and editorial:
 - A framed, offset mirror motif refers directly to the MIRROR part of the name. It replaces decorative or unexplained circles, floating ornaments and generic abstract diagrams.
 - Layout rhythm comes from editorial type hierarchy, aligned baselines, short section labels and deliberate rules rather than a repeated set of rounded cards.
 - No unnecessary hover or motion. Motion must communicate an actual action or state.
+- The one deliberate motion is the hero mirror canvas: the mark draws itself, anything the visitor draws is reflected across the centre axis (MIRROR), and lines gently "boil" at 8 drawings per second like hand-drawn animation (ANIMA). It pauses off-screen, and with reduced motion the mark is shown still. On touch screens drawing is opt-in (「指で描く」) so the panel never traps scrolling.
+- Lime is never used for text on paper (too little contrast); on paper the mark sits on an ink tile or panel.
+- Minimum sizes: body 15–16px, labels 12px. Japanese headings break by phrase (word-break: auto-phrase) and short paragraphs are balanced so no line ends with a stranded 「す。」.
 
 ## Product distinction
 MIRANIMA and NIARIM must not share one undifferentiated color system:
@@ -48,8 +51,8 @@ Avoid duplicate manifesto / about / philosophy sections that repeat the same mes
 
 ## Implementation
 - Static HTML, CSS and vanilla JavaScript; no runtime framework or build step.
-- index.html contains the complete Japanese page.
-- styles.css imports styles/core.css, styles/components.css, styles/responsive.css and styles/studio.css.
-- script.js handles mobile navigation, dynamic year, contact address and official NIARIM links.
+- index.html contains the complete Japanese page and links styles/core.css (tokens, type, header, menu, footer) and styles/home.css (sections and responsive rules).
+- script.js applies site.config.js (contact addresses, official NIARIM links), the mobile menu, current-section navigation state and the NIARIM reel indicator. mirror.js runs the hero mirror canvas.
+- Web fonts load without blocking first paint.
 - NIARIM screenshots load from its official site, so no duplicate copies are stored in this repository.
 - dev_branch is the implementation branch. Keep main as the lightweight repository landing branch.
