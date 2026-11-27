@@ -8,7 +8,7 @@
   "fonts": "family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400&family=Shippori+Mincho:wght@500;600",
   "t": {
     "meta": {
-      "title": "MIRANIMA — Votre façon de créer n’a pas à s’adapter à vos outils.",
+      "title": "MIRANIMA — Votre façon de vous exprimer n’a pas à s’adapter à vos outils.",
       "description": "MIRANIMA est une marque de logiciels japonaise qui conçoit ses outils à partir de ce que les créateurs veulent exprimer. Nous développons NIARIM, une application Android d’animation dessinée à la main.",
       "ogDescription": "Des outils pensés à partir de ce que vous voulez exprimer. La marque de logiciels à l’origine de NIARIM, une application d’animation dessinée à la main."
     },
@@ -28,7 +28,7 @@
       "contact": "Nous écrire"
     },
     "hero": {
-      "title": "Votre façon de créer n’a pas à s’adapter à vos outils.",
+      "title": "Votre façon de vous exprimer n’a pas à s’adapter à vos outils.",
       "lead": "Ce que l’on veut dessiner, et la manière de le créer, diffèrent d’une personne à l’autre. Plutôt que de demander aux créateurs de s’adapter aux contraintes de l’outil, MIRANIMA conçoit ses outils à partir de ce qu’ils veulent exprimer.",
       "detail": "Nous transformons en logiciels réellement utilisables les « si seulement on pouvait… » qui surgissent en pleine création. Notre premier produit est <b class=\"latin\">NIARIM</b>, une application d’animation dessinée à la main.",
       "ctaNiarim": "Découvrir NIARIM",
@@ -54,7 +54,7 @@
     "product": {
       "tagline": "Dessinez image par image, et mettez vos dessins en mouvement.",
       "lead": "NIARIM est une application Android pour créer de l’animation dessinée à la main sur téléphone ou tablette.",
-      "body": "Dessinez sur la toile, superposez l’image suivante et ajustez le mouvement pendant la lecture. Du dessin au montage, du montage audio à l’exportation vidéo, tout se fait dans une seule application.",
+      "body": "Dessinez sur la toile, superposez l’image suivante et ajustez le mouvement pendant la lecture. Dessin, montage, son et exportation vidéo : tout se fait dans une seule application.",
       "site": "Site officiel de NIARIM",
       "play": "Voir sur Google Play",
       "storeNote": ""

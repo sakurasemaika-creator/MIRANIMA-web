@@ -83,13 +83,13 @@
     },
     "studio": {
       "reading": "mi·ra·ni·ma",
-      "copy": "MIRANIMA 是个人经营的商号，为创作者策划、开发软件。目前，我们主要在开发和运营手绘动画制作应用“NIARIM”。",
-      "tradeName": "商号",
+      "copy": "MIRANIMA 是由个人经营者使用的营业名称，为创作者策划、开发软件。目前主要从事手绘动画制作应用“NIARIM”的开发与运营。",
+      "tradeName": "营业名称",
       "tradeNameValue": "MIRANIMA（ミラニマ）",
       "form": "组织形式",
       "formValue": "个人经营",
       "disclosure": "负责人、地址、电话号码",
-      "disclosureValue": "收到请求后，我们将及时提供上述信息。",
+      "disclosureValue": "如通过电子邮件提出请求，将及时提供。",
       "legal": "依据日本《特定商业交易法》的公示信息",
       "legalLink": "NIARIM Premium：依据日本《特定商业交易法》的公示信息",
       "legalNote": "链接页面为 NIARIM Premium 销售条件的相关信息。",
@@ -103,7 +103,7 @@
       "languageNote": "欢迎用中文来信。MIRANIMA 由一位身在日本的开发者独自运营，会借助翻译工具把您的来信译成日文阅读，并以同样的方式回复，因此可能需要稍长一些的时间，内容也可能较为简洁。"
     },
     "footer": {
-      "tradeName": "商号：MIRANIMA"
+      "tradeName": "营业名称：MIRANIMA"
     },
     "notFound": {
       "pageTitle": "找不到页面",

@@ -24,7 +24,7 @@
     "nav": {
       "name": "Sobre el nombre",
       "niarim": "Producto",
-      "studio": "Sobre la actividad",
+      "studio": "Información del negocio",
       "contact": "Contacto"
     },
     "hero": {
@@ -54,7 +54,7 @@
     "product": {
       "tagline": "Dibuja fotograma a fotograma y ponlo en movimiento.",
       "lead": "NIARIM es una app para Android con la que creas animación dibujada a mano en tu teléfono o tableta.",
-      "body": "Dibuja en el lienzo, superpón el siguiente fotograma y ajusta el movimiento mientras lo reproduces. Del dibujo y la edición a la edición de audio y la exportación de video, todo el proceso cabe en una sola app.",
+      "body": "Dibuja en el lienzo, superpón el siguiente fotograma y ajusta el movimiento mientras lo reproduces. Dibujo, edición, audio y exportación de video: todo el proceso cabe en una sola app.",
       "site": "Sitio oficial de NIARIM",
       "play": "Ver en Google Play",
       "storeNote": ""
@@ -87,7 +87,7 @@
       "tradeName": "Nombre comercial",
       "tradeNameValue": "MIRANIMA (ミラニマ)",
       "form": "Forma jurídica",
-      "formValue": "Empresa individual (persona física)",
+      "formValue": "Negocio individual (Japón)",
       "disclosure": "Titular, dirección y teléfono",
       "disclosureValue": "Se facilitarán sin demora a quien los solicite.",
       "legal": "Aviso conforme a la Ley de Transacciones Comerciales Específicas (Japón)",
