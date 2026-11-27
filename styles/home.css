@@ -338,7 +338,7 @@
   border: 1px solid rgba(40, 40, 56, .16);
   background: #fff;
   cursor: pointer;
-  transition: border-color .15s var(--ease), box-shadow .15s var(--ease);
+  /* no transition: the highlight must step with the frames (125 ms), like a real playhead */
 }
 .fb-cell svg { width: 100%; height: auto; aspect-ratio: 4 / 3; }
 .fb-cell-no {
