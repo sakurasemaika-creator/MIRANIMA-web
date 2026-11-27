@@ -99,8 +99,11 @@ h1, h2, h3 { text-wrap: balance; }
     word-break: auto-phrase;
   }
 }
-/* Short paragraphs: even line lengths, no stranded 「す。」 */
+/* Short paragraphs: break between phrases and even out line lengths, so no line ends on a stranded 「す。」. */
 .hero-lead, .hero-detail, .product-lead, .contact-intro p, .studio-copy { text-wrap: balance; }
+@supports (word-break: auto-phrase) {
+  .hero-lead, .hero-detail, .product-lead, .contact-intro p, .studio-copy { word-break: auto-phrase; }
+}
 
 ::selection { background: var(--lime); color: var(--ink); }
 
