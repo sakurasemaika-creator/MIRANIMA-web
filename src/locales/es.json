@@ -8,9 +8,9 @@
   "fonts": "family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400&family=Shippori+Mincho:wght@500;600",
   "t": {
     "meta": {
-      "title": "MIRANIMA — Tu expresión no tiene por qué plegarse a tus herramientas.",
+      "title": "MIRANIMA — No tienes que cambiar tu expresión para adaptarla a tus herramientas.",
       "description": "MIRANIMA es una marca de software de Japón que diseña herramientas a partir de lo que cada creador quiere expresar. Desarrollamos NIARIM, una app de animación dibujada a mano para Android.",
-      "ogDescription": "Herramientas pensadas a partir de lo que quieres expresar. La marca de software detrás de NIARIM, una app de animación dibujada a mano."
+      "ogDescription": "Herramientas pensadas a partir de lo que quieres expresar. La marca de software creadora de NIARIM, una app de animación dibujada a mano."
     },
     "a11y": {
       "skip": "Saltar al contenido",
@@ -18,7 +18,8 @@
       "mainNav": "Navegación principal",
       "mobileNav": "Navegación móvil",
       "language": "Idioma",
-      "newTab": "(se abre en una pestaña nueva)"
+      "newTab": "(se abre en una pestaña nueva)",
+      "homePage": "MIRANIMA — página de inicio"
     },
     "nav": {
       "name": "Sobre el nombre",
@@ -27,8 +28,8 @@
       "contact": "Contacto"
     },
     "hero": {
-      "title": "Tu expresión no tiene por qué plegarse a tus herramientas.",
-      "lead": "Lo que cada persona quiere dibujar, y su manera de crearlo, es distinto. En lugar de pedir a quien crea que se adapte a las limitaciones de la herramienta, en MIRANIMA pensamos las herramientas a partir de lo que se quiere expresar.",
+      "title": "No tienes que cambiar tu expresión para adaptarla a tus herramientas.",
+      "lead": "Qué dibujar y cómo crearlo varía de una persona a otra. En lugar de pedir a quien crea que se adapte a las limitaciones de la herramienta, en MIRANIMA pensamos las herramientas a partir de lo que se quiere expresar.",
       "detail": "Convertimos los «ojalá se pudiera…» que surgen al crear en software que de verdad se puede usar. Nuestro primer producto es <b class=\"latin\">NIARIM</b>, una app de animación dibujada a mano.",
       "ctaNiarim": "Ver NIARIM",
       "ctaName": "Sobre el nombre"
@@ -37,23 +38,23 @@
       "aria": "Un lienzo con el símbolo de MIRANIMA, dibujado de forma simétrica respecto a un eje central. Todo lo que se dibuja en él se refleja en el lado opuesto.",
       "fallback": "El símbolo de MIRANIMA.",
       "hintFine": "Arrastra para dibujar. Cada trazo se refleja en el otro lado.",
-      "hintTouch": "Toca «Dibujar» y traza con el dedo. Cada trazo se refleja en el otro lado.",
+      "hintTouch": "Toca «Dibujar» y dibuja con el dedo. Cada trazo se refleja en el otro lado.",
       "draw": "Dibujar",
       "done": "Listo",
-      "clear": "Borrar"
+      "clear": "Borrar todo"
     },
     "name": {
       "title": "Dos significados en un solo nombre.",
-      "figcaption": "El nombre MIRANIMA se puede leer de dos maneras: MIRROR + ANIMA y MIRAI + ANIMATION.",
+      "figcaption": "El nombre MIRANIMA se puede leer de dos maneras: MIRROR (espejo) + ANIMA, y MIRAI (futuro) + ANIMATION (animación).",
       "m1Title": "Un espejo de lo que lleva dentro quien crea.",
-      "m1Text": "Anima es una palabra que significa alma o vida. Queremos crear herramientas que funcionen como un espejo y reflejen la sensibilidad de cada creador y las imágenes que tiene en mente, tal como las imagina. Herramientas que no imponen una forma de expresarse, sino que acogen las ideas de quien las usa.",
+      "m1Text": "Anima es la palabra latina para «alma» o «vida». Queremos crear herramientas que funcionen como un espejo y reflejen, tal como se desea, la sensibilidad de quien crea y las imágenes que tiene en la cabeza. Herramientas que no impongan una forma de expresarse, sino que acojan las ideas de quien las usa.",
       "m2Title": "Construir juntos la expresión del futuro.",
-      "m2Text": "Mirai significa «futuro» en japonés. Animación quiere decir dar movimiento, insuflar vida. Con las herramientas que creamos queremos apoyar a quienes se atreven con nuevas formas de crear y de expresarse. Ese deseo también forma parte del nombre."
+      "m2Text": "Mirai significa «futuro» en japonés. Animación quiere decir dar movimiento, insuflar vida. Con las herramientas que creamos queremos apoyar a quienes se animan a probar nuevas formas de crear y de expresarse. Ese deseo también forma parte del nombre."
     },
     "product": {
-      "tagline": "Dibuja fotograma a fotograma. Dale vida.",
-      "lead": "NIARIM es una app para Android con la que creas animación dibujada a mano en tu teléfono o tableta.",
-      "body": "Dibuja en el lienzo, superpón el siguiente fotograma y ajusta el movimiento mientras lo reproduces. Del dibujo y la edición al audio y la exportación de vídeo, todo el proceso cabe en una sola app.",
+      "tagline": "Dibuja fotograma a fotograma y ponlo en movimiento.",
+      "lead": "NIARIM es una app para Android con la que creas animación dibujada a mano en tu móvil o tableta.",
+      "body": "Dibuja en el lienzo, superpón el siguiente fotograma y ajusta el movimiento mientras lo reproduces. Del dibujo y la edición a la edición de audio y la exportación de vídeo, todo el proceso cabe en una sola app.",
       "site": "Web oficial de NIARIM",
       "play": "Ver en Google Play"
     },
@@ -81,21 +82,21 @@
     },
     "studio": {
       "reading": "mi·ra·ni·ma",
-      "copy": "MIRANIMA es el nombre comercial con el que planificamos y desarrollamos software para creadores. Actualmente nos centramos en desarrollar y gestionar NIARIM, una app de animación dibujada a mano.",
+      "copy": "MIRANIMA es el nombre comercial con el que ideamos y desarrollamos software para creadores. Actualmente nos centramos en desarrollar y gestionar NIARIM, una app de animación dibujada a mano.",
       "tradeName": "Nombre comercial",
       "tradeNameValue": "MIRANIMA (ミラニマ)",
-      "form": "Forma de actividad",
+      "form": "Forma jurídica",
       "formValue": "Empresario individual",
-      "disclosure": "Responsable, dirección y teléfono",
+      "disclosure": "Titular, dirección y teléfono",
       "disclosureValue": "Se facilitarán sin demora a quien los solicite.",
-      "legal": "Ley de Transacciones Comerciales Específicas",
-      "legalLink": "NIARIM Premium: aviso según la Ley de Transacciones Comerciales Específicas",
+      "legal": "Ley japonesa de Transacciones Comerciales Específicas",
+      "legalLink": "NIARIM Premium: aviso según la Ley japonesa de Transacciones Comerciales Específicas",
       "legalNote": "La página enlazada recoge las condiciones de venta de NIARIM Premium."
     },
     "contact": {
       "title": "Contacto",
-      "text": "Si tienes preguntas sobre nuestros productos o quieres hablar de una propuesta comercial o una colaboración, escríbenos por correo electrónico. Leeremos tu mensaje y te responderemos.",
-      "general": "Consultas y propuestas",
+      "text": "Si tienes preguntas sobre nuestros productos o quieres consultarnos sobre un trabajo o una colaboración, escríbenos por correo electrónico. Revisaremos tu mensaje y te responderemos.",
+      "general": "Consultas y colaboraciones",
       "support": "Problemas y uso de la app"
     },
     "footer": {

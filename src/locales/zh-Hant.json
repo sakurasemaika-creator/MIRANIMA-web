@@ -18,7 +18,8 @@
       "mainNav": "主要導覽",
       "mobileNav": "行動版導覽",
       "language": "語言",
-      "newTab": "（在新分頁中開啟）"
+      "newTab": "（在新分頁中開啟）",
+      "homePage": "MIRANIMA 首頁"
     },
     "nav": {
       "name": "名字的由來",
@@ -29,42 +30,42 @@
     "hero": {
       "title": "<span class=\"ph\">不必為了工具，</span><br><span class=\"ph\">改變你的表達。</span>",
       "lead": "想畫的東西、創作的方式，每個人都不一樣。MIRANIMA 不讓創作者去遷就工具，而是從想要表達的東西出發來構思工具。",
-      "detail": "把創作現場發現的「要是能這樣就好了」，變成真正可用的軟體。我們的第一款產品，是手繪動畫製作應用程式 <b class=\"latin\">NIARIM</b>。",
+      "detail": "把創作現場發現的「要是能這樣就好了」，變成實際可用的軟體。我們的第一款產品，是手繪動畫製作應用程式 <b class=\"latin\">NIARIM</b>。",
       "ctaNiarim": "了解 NIARIM",
       "ctaName": "名字的由來"
     },
     "mirror": {
       "aria": "以中線為軸、左右對稱地畫出 MIRANIMA 標誌的畫布。在上面畫下的線條，會像鏡子一樣映到另一側。",
       "fallback": "MIRANIMA 的標誌。",
-      "hintFine": "拖曳滑鼠試著畫畫看。畫下的線條會像鏡子一樣映到另一側。",
-      "hintTouch": "點選「用手指畫」，再試著描描看。畫下的線條會像鏡子一樣映到另一側。",
+      "hintFine": "試著拖曳來畫畫看。畫下的線條會像鏡子一樣映到另一側。",
+      "hintTouch": "點一下「用手指畫」，就能用手指作畫。畫下的線條會像鏡子一樣映到另一側。",
       "draw": "用手指畫",
-      "done": "畫好了",
-      "clear": "清除"
+      "done": "完成",
+      "clear": "全部清除"
     },
     "name": {
       "title": "<span class=\"ph\">名字裡的</span><span class=\"ph\">兩層含義。</span>",
-      "figcaption": "MIRANIMA 這個名字可以讀作兩種組合：「MIRROR＋ANIMA」與「MIRAI＋ANIMATION」。",
+      "figcaption": "MIRANIMA 這個名字可以讀作兩種組合：「MIRROR（鏡子）＋ANIMA」與「MIRAI（未來）＋ANIMATION」。",
       "m1Title": "映照創作者內心的鏡子。",
-      "m1Text": "Anima 意為靈魂與生命。我們想做出像鏡子一樣的工具，把創作者的感性與腦海中的畫面如實映照出來。不替使用者決定表達方式，而是接住他們的想法。",
-      "m2Title": "與你一起創造未來的表達。",
-      "m2Text": "Mirai 是日語的「未來」。Animation 則有賦予動作、注入生命的意思。我們希望透過製作工具，支持那些挑戰新創作方式與新表達的人。這份心願，也寄託在這個名字裡。"
+      "m1Text": "Anima 意為靈魂與生命。我們想做出像鏡子一樣的工具，把創作者的感性與腦海中的畫面如實映照出來。我們希望它不替使用者決定表達方式，而是接納他們的想法。",
+      "m2Title": "一起創造未來的表達。",
+      "m2Text": "Mirai 是日語的「未來」。Animation 則有賦予動作、注入生命的意思。我們希望透過打造工具，支持那些挑戰新創作方式與新表達的人。這份心願，也寄託在這個名字裡。"
     },
     "product": {
       "tagline": "一格一格地畫，讓它動起來。",
       "lead": "NIARIM 是一款在手機或平板上製作手繪動畫的 Android 應用程式。",
-      "body": "在畫布上繪圖，疊上下一格，一邊播放一邊調整動作。從繪圖、編輯到音訊與影片匯出，整個創作流程都能在一個應用程式裡完成。",
+      "body": "在畫布上繪圖，疊上下一個影格，一邊播放一邊調整動作。從繪圖、編輯到音訊編輯與影片匯出，整個創作流程都能在一個應用程式裡完成。",
       "site": "NIARIM 官方網站",
       "play": "在 Google Play 查看"
     },
     "flip": {
-      "title": "彈跳的球的動畫",
-      "caption": "把彈跳的球按影格排開。開啟洋蔥皮後，前後兩格會淡淡地疊在一起。",
+      "title": "彈跳小球動畫",
+      "caption": "把彈跳的球按影格排開。開啟洋蔥皮後，前後兩個影格會淡淡地疊在一起。",
       "play": "播放",
       "pause": "暫停",
       "onion": "洋蔥皮",
       "frames": "影格",
-      "frame": "顯示第 {n} 格"
+      "frame": "顯示第 {n} 個影格"
     },
     "reel": {
       "aria": "用 NIARIM 創作作品的流程（真實應用程式畫面）",
@@ -72,7 +73,7 @@
       "s1Text": "用筆刷和圖層一層層地畫出來。",
       "s1Alt": "在 NIARIM 畫布上畫球的真實應用程式畫面",
       "s2Title": "比對動作。",
-      "s2Text": "疊上前後兩格，確認畫面之間是否銜接自然。",
+      "s2Text": "疊上前後兩個影格，確認畫面之間是否銜接自然。",
       "s2Alt": "疊加顯示前後兩格的 NIARIM 洋蔥皮畫面",
       "s3Title": "在時間軸上完成。",
       "s3Text": "排列影格、影片與音訊，組成完整的作品。",
@@ -80,16 +81,16 @@
       "note": "截圖來自真實應用程式，畫面可能隨更新改變。"
     },
     "studio": {
-      "reading": "ミラニマ",
-      "copy": "MIRANIMA 是企劃與開發創作者軟體的商號。目前以手繪動畫製作應用程式「NIARIM」為中心進行開發與營運。",
+      "reading": "mi·ra·ni·ma",
+      "copy": "MIRANIMA 是我們企劃、開發為創作者打造的軟體時使用的商號。目前以手繪動畫製作應用程式「NIARIM」為中心進行開發與營運。",
       "tradeName": "商號",
       "tradeNameValue": "MIRANIMA（ミラニマ）",
-      "form": "經營形態",
+      "form": "組織型態",
       "formValue": "個人經營",
       "disclosure": "負責人、地址、電話號碼",
-      "disclosureValue": "如有需要，將在收到請求後即時提供。",
-      "legal": "特定商業交易法相關標示",
-      "legalLink": "NIARIM Premium 的特定商業交易法相關標示",
+      "disclosureValue": "收到請求後，我們將毫不延遲地提供。",
+      "legal": "依據日本特定商業交易法的標示",
+      "legalLink": "NIARIM Premium：依據日本特定商業交易法的標示",
       "legalNote": "連結頁面為 NIARIM Premium 銷售條件的相關標示。"
     },
     "contact": {
