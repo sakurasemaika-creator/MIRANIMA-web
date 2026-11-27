@@ -91,13 +91,15 @@
       "disclosureValue": "ご請求があった場合は、遅滞なく開示いたします。",
       "legal": "特定商取引法に基づく表記",
       "legalLink": "NIARIM Premiumの特定商取引法に基づく表記",
-      "legalNote": "リンク先はNIARIM Premiumの販売条件に関する表示です。"
+      "legalNote": "リンク先はNIARIM Premiumの販売条件に関する表示です。",
+      "translationNote": ""
     },
     "contact": {
       "title": "お問い合わせ",
       "text": "プロダクトについてのご質問、お取引や協業のご相談などは、メールでご連絡ください。内容を確認のうえ、返信いたします。",
       "general": "ご相談・お取引など",
-      "support": "アプリの不具合・使い方など"
+      "support": "アプリの不具合・使い方など",
+      "languageNote": ""
     },
     "footer": {
       "tradeName": "屋号：MIRANIMA（ミラニマ）"

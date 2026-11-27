@@ -91,13 +91,15 @@
       "disclosureValue": "Communiqués sans délai sur simple demande.",
       "legal": "Mentions prévues par la loi japonaise sur les transactions commerciales spécifiées",
       "legalLink": "NIARIM Premium : mentions prévues par la loi japonaise sur les transactions commerciales spécifiées",
-      "legalNote": "La page liée présente les conditions de vente de NIARIM Premium."
+      "legalNote": "La page liée présente les conditions de vente de NIARIM Premium.",
+      "translationNote": "Cette section est traduite du japonais. En cas de divergence, la <a href=\"../#studio\" hreflang=\"ja\">version japonaise</a> fait foi."
     },
     "contact": {
       "title": "Contact",
       "text": "Pour toute question sur nos produits, ou pour nous proposer un projet ou une collaboration, écrivez-nous par e-mail. Nous lirons votre message et vous répondrons.",
       "general": "Questions, projets et collaborations",
-      "support": "Problèmes et utilisation de l’application"
+      "support": "Problèmes et utilisation de l’application",
+      "languageNote": "MIRANIMA est gérée par une seule personne, au Japon. Les messages sont lus en japonais et les réponses rédigées à l’aide d’outils de traduction : elles peuvent donc prendre un peu plus de temps et rester assez simples."
     },
     "footer": {
       "tradeName": "Nom commercial : MIRANIMA"

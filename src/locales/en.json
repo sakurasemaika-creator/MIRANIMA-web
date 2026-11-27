@@ -91,13 +91,15 @@
       "disclosureValue": "Disclosed without delay upon request.",
       "legal": "Notice under the Act on Specified Commercial Transactions (Japan)",
       "legalLink": "NIARIM Premium: Notice under the Act on Specified Commercial Transactions",
-      "legalNote": "The linked page covers the terms of sale for NIARIM Premium."
+      "legalNote": "The linked page covers the terms of sale for NIARIM Premium.",
+      "translationNote": "This section is translated from Japanese. If anything differs, the <a href=\"../#studio\" hreflang=\"ja\">Japanese version</a> prevails."
     },
     "contact": {
       "title": "Contact",
       "text": "For questions about our products, business inquiries or collaboration proposals, please contact us by email. We’ll review your message and get back to you.",
       "general": "General and business inquiries",
-      "support": "App issues and how-to"
+      "support": "App issues and how-to",
+      "languageNote": "MIRANIMA is run by one developer in Japan. Messages are read in Japanese and answered with the help of translation tools, so replies may take a little longer and be fairly simple."
     },
     "footer": {
       "tradeName": "Trade name: MIRANIMA"

@@ -155,6 +155,9 @@ for (const l of locales) {
     alternates,
     jsonld,
     flipbook: flipbook(l.t),
+    /* Shown on translated pages only (empty in Japanese): who replies and how, and which text prevails. */
+    contactNote: l.t.contact.languageNote ? `\n          <p class="contact-note">${esc(l.t.contact.languageNote)}</p>` : '',
+    translationNote: l.t.studio.translationNote ? `\n          <p class="facts-note">${l.t.studio.translationNote}</p>` : '',
     langItems: locales.map((target) => (
       `          <li><a href="${relLink(l, target)}" hreflang="${target.lang}" lang="${target.lang}"${target.lang === l.lang ? ' aria-current="page"' : ''}>${esc(target.name)}</a></li>`
     )).join('\n'),

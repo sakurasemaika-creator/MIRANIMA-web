@@ -91,13 +91,15 @@
       "disclosureValue": "收到請求後，我們將不遲延地提供上述資訊。",
       "legal": "依據日本《特定商業交易法》之標示",
       "legalLink": "NIARIM Premium：依據日本《特定商業交易法》之標示",
-      "legalNote": "連結頁面為 NIARIM Premium 銷售條件的相關標示。"
+      "legalNote": "連結頁面為 NIARIM Premium 銷售條件的相關標示。",
+      "translationNote": "本欄內容譯自日語。如有出入，以<a href=\"../#studio\" hreflang=\"ja\">日語版</a>為準。"
     },
     "contact": {
       "title": "聯絡我們",
       "text": "關於產品的疑問、業務往來或合作洽談，請透過電子郵件與我們聯絡。我們確認內容後會回覆您。",
       "general": "諮詢、業務往來等",
-      "support": "應用程式故障、使用方法等"
+      "support": "應用程式故障、使用方法等",
+      "languageNote": "MIRANIMA 由一位身在日本的開發者獨自營運。來信會以日語閱讀，並藉助翻譯工具進行回覆，因此回覆可能需要稍長時間，內容也可能較為簡潔。"
     },
     "footer": {
       "tradeName": "商號：MIRANIMA"

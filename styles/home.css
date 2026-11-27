@@ -516,6 +516,9 @@
   transition: transform .25s var(--ease);
 }
 .fact-link:hover { color: var(--lime-ink); border-color: var(--lime-ink); }
+.facts-note { max-width: 40em; margin-top: 20px; color: var(--muted); font-size: var(--fs-small); }
+.facts-note a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+.facts-note a:hover { color: var(--lime-ink); }
 .fact-link:hover .icon { transform: translate(2px, -2px); }
 
 /* ---------- 04 Contact ---------- */
@@ -545,6 +548,14 @@
   font-feature-settings: var(--ff-heading);
 }
 .contact-intro p { max-width: 32em; margin-top: 20px; color: var(--on-ink-muted); }
+.contact-intro .contact-note {
+  max-width: 36em;
+  margin-top: 24px;
+  padding-left: 16px;
+  border-left: 1px solid rgba(227, 255, 54, .45);
+  font-size: var(--fs-small);
+  line-height: 1.8;
+}
 .contact-mark {
   width: clamp(64px, 9vw, 132px); height: auto; aspect-ratio: 328 / 289;
   color: var(--lime);
